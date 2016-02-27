@@ -12,7 +12,7 @@ App.Router.map(function() {
 
 App.RrdRoute = Ember.Route.extend ({
 	model: function() {
-		return ['$BRENT','$USD','$GOLD','ALS.TO','AAPL','AXL.TO','AFL','WMT','AMH','ARGS','ASHR','AUY','AXS','BAX','BXE','BRI.V','BMO','BABA','BMY','CCJ','CHL','CME','SWKS','COH','CRAY','CRESY','CSCO','DE','DSUM','ELNK','ESV','EOG','EVT','FYLD','HSBC','IMMU','IPHYF','JNJ','KERX','KKR','LTL','LNN','LVMUY','NGPHF','NOV','NEWT','GAA','GMOM','GULTU','HTBX','LRE','LRE.L','QCOM','MGNX','NGPHF','NRP','NUV','DIS','PLG','PRA','ROP','SCPZF','SHLD','STZ','SYY','SDRL','T','TGT','TJX','TNH','SLW','UVV','VAR','VNR','WPRT','WRB','YHOO',];
+		return ['$BRENT','$USD','$GOLD','ALS.TO','AAPL','AXL.TO','AFL','WMT','AMH','ARGS','ASHR','AUY','AXS','BAX','BXE','BRI.V','BMO','BABA','BMY','CCJ','CHL','CME','COH','CRAY','CRESY','CSCO','DE','DSUM','ELNK','ESV','EOG','EVT','FYLD','HSBC','IMMU','IPHYF','JNJ','KERX','KKR','LTL','LNN','LVMUY','NGPHF','NOV','NEWT','GAA','GMOM','GULTU','HTBX','LRE','LRE.L','QCOM','MGNX','NGPHF','NRP','NUV','DIS','PLG','PRA','ROP','SCPZF','SHLD','STZ','SYY','SDRL','T','TGT','TJX','TNH','SLW','UVV','VAR','VNR','WPRT','WRB','YHOO',];
 	}
 });
 
