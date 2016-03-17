@@ -9,6 +9,7 @@ App.Router.map(function() {
   this.resource('p4');
   this.resource('p5');
   this.resource('p6');
+  this.resource('p7');
 });
 
 App.RrdRoute = Ember.Route.extend ({
@@ -16,13 +17,11 @@ App.RrdRoute = Ember.Route.extend ({
 		return ['$BRENT','$USD','$GOLD','ALS.TO','AAPL','AXL.TO','AFL','ARI','ABBV','WMT','AUY','AXS','BAX','BXE','BRI.V','BMY','CSCO','CCJ','CHL','CME','DEO','COH','DE','DIS','DSUM','ELNK','ESV','EOG','EVT','FB','FYLD','GE','GILD','GOOG','IPHYF','MFA','KERX','KKR','NGPHF','NKE','MUX','LVMUY','NUV','NOV','NEWT','MSFT','PEP','GMOM','GULTU','HTBX','TGT','LRE.L','VZ','MGNX','WEC','XLU','PLG','SCPZF','SHLD','STZ','SYY','SDRL','T','TGT','TJX','TNH','SLW','UVV','VAR','VNR','WPRT','WRB','YHOO',];
 	}
 });
-
 App.SaRoute = Ember.Route.extend ({
 	model: function() {
 		return ['RNWK','GWPH','LNN','GOGO','DGI','ARIA',,'SWKS','SAND','WPRT','DBD','RPM','BMS','UVV','LEG','LPI','TGP','MDR','TIBX','NUAN','SWKS','MRVL','ALS.TO','CRAY','CRESY','CSCO','SPN','KKR','STLD'];
 	}
 });
-
 App.P1Route = Ember.Route.extend ({
 	model: function() {
 		return ['JNJ','WMT','MDT','DLB','GLW','ICCC','ERIC','EMC','D','CBI','DVN','L','KMI','TGP','TRGP','OKE','OGS','CHK','SSE','ETE','NFG','APC','EXXI','NG','DRTX','UNP','FCX','NRP','HSY','ATVI','MSFT','HSBC','IMMU','MCD','LO','DO','WRB','AFG','TRV','CB','Y','AXS'];
@@ -36,7 +35,7 @@ App.P2Route = Ember.Route.extend ({
 // --------- ********************
 App.P3Route = Ember.Route.extend ({
 	model: function() {
-		return ['TGP','QCOM','ABBV','TNH','MFA','OXY','GILD','NKE','FB','AMZN','GOOG','CVX','VZ','CAT','PFE','SWKS','ALS.TO','MRVL','CRAY','KKR'];
+		return ['TGP','QCOM','ABBV','TNH','MFA','PEP','OXY','GILD','NKE','FB','AMZN','GOOG','CVX','VZ','CAT','PFE','SWKS','ALS.TO','MRVL','CRAY','KKR'];
 	}
 });
 // --------- ********************
@@ -53,6 +52,11 @@ App.P5Route = Ember.Route.extend ({
 App.P6Route = Ember.Route.extend ({
 	model: function() {
 		return ['CVX','VZ','CAT','CSCO','PFE','IBM','XOM','BA','MRK','INTC'];
+	}
+});
+App.P7Route = Ember.Route.extend ({
+	model: function() {
+		return ['AA-B','ALS.TO','AFL','ABBV','BAX','BXLT','AMZN','ARI','AXS','BMY','CSCO','CAT','DEO','DIS','FB','GE','GILD','GOOG','IPHYF','MFA','NGPHF','NKE','NUV','PEP','TGT','TNH','VZ','WEC','XLU'];
 	}
 });
 App.IndexRoute = Ember.Route.extend({
