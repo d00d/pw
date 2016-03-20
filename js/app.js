@@ -14,11 +14,7 @@ App.Router.map(function() {
 
 App.RrdRoute = Ember.Route.extend ({
 	model: function() {
-<<<<<<< HEAD
-		return ['$BRENT','$USD','$GOLD','ALS.TO','AAPL','AXL.TO','AFL','WMT','AMH','ARGS','ASHR','AUY','AXS','BAX','BXE','BRI.V','BMO','BABA','BMY','CCJ','CHL','CME','COH','CRAY','CRESY','CSCO','DE','DSUM','ELNK','ESV','EOG','EVT','FYLD','HSBC','IMMU','IPHYF','JNJ','KERX','KKR','LTL','LNN','LVMUY','NGPHF','NOV','NEWT','GAA','GMOM','GULTU','HTBX','LRE','LRE.L','QCOM','MGNX','NGPHF','NRP','NUV','DIS','PLG','PRA','ROP','SCPZF','SHLD','STZ','SYY','SDRL','T','TGT','TJX','TNH','SLW','UVV','VAR','VNR','WPRT','WRB','YHOO',];
-=======
 		return ['$BRENT','$USD','$GOLD','ALS.TO','AAPL','AXL.TO','AFL','ARI','ABBV','WMT','AUY','AXS','BAX','BXE','BRI.V','BMY','CSCO','CCJ','CHL','CME','DEO','COH','DE','DIS','DSUM','ELNK','ESV','EOG','EVT','FB','FYLD','GE','GILD','GOOG','IPHYF','MFA','KERX','KKR','NGPHF','NKE','MUX','LVMUY','NUV','NOV','NEWT','MSFT','PEP','GMOM','GULTU','HTBX','TGT','LRE.L','VZ','MGNX','WEC','XLU','PLG','SCPZF','SHLD','STZ','SYY','SDRL','T','TGT','TJX','TNH','SLW','UVV','VAR','VNR','WPRT','WRB','YHOO',];
->>>>>>> detailedQuotes
 	}
 });
 App.SaRoute = Ember.Route.extend ({
@@ -36,13 +32,13 @@ App.P2Route = Ember.Route.extend ({
 		return ['DSUM','DBA','TBT','$VIX','GDX','$SILVER','$NYSI','$NASI','SPY','PSQ','DOG','SH','XLF','$MYY','SBB','$TICK','DUG','REW','SKF','SMN','SCC','SZK','EUM','$BPSPX','$BPHEAL','$BPUTIL','$BPFINA','$BPDISC','T','$BPSTAP','$BPINDY','$XOI','IYR','ROM','SCIF'];
 	}
 });
-// --------- ********************
+// --------- ******** LIKE NOW ************
 App.P3Route = Ember.Route.extend ({
 	model: function() {
 		return ['TGP','QCOM','ABBV','TNH','MFA','PEP','OXY','GILD','NKE','FB','AMZN','GOOG','CVX','VZ','CAT','PFE','SWKS','ALS.TO','MRVL','CRAY','KKR'];
 	}
 });
-// --------- ********************
+// --------- ******** LIKE NOW ************
 App.P4Route = Ember.Route.extend ({
 	model: function() {
 		return ['BP','NGLS','LINE','ARLP','BBEP','NRP','IIM','JPS','CHL','BMY','AXS','BAX','AFL','GOV','JRO','UUV','COH','KKR','LTL','GMOM','GLAD','AB','JPS','BMO','FRA','AZSEY','IDV','PCL','CME','HSBC','WMT','MCD','MEMP','KO','PG','JNJ','MSFT','BDX','SYY','INTC','AAPL','EPD','DPM','WPZ','KMI','SEP','VNR'];
