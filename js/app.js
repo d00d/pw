@@ -12,24 +12,28 @@ App.Router.map(function() {
   this.resource('p7');
 });
 
+// --------- ******** PORTFOLIO PAST & PRESENT ************
 App.RrdRoute = Ember.Route.extend ({
 	model: function() {
 		return ['$BRENT','$USD','$GOLD','ALS.TO','AAPL','AXL.TO','AFL','ARI','ABBV','WMT','AUY','AXS','BAX','BXE','BRI.V','BMY','CSCO','CCJ','CHL','CME','DEO','COH','DE','DIS','DSUM','ELNK','ESV','EOG','EVT','FB','FYLD','GE','GILD','GOOG','IPHYF','MFA','KERX','KKR','NGPHF','NKE','MUX','LVMUY','NUV','NOV','NEWT','MSFT','PEP','GMOM','GULTU','HTBX','TGT','LRE.L','VZ','MGNX','WEC','XLU','PLG','SCPZF','SHLD','STZ','SYY','SDRL','T','TGT','TJX','TNH','SLW','UVV','VAR','VNR','WPRT','WRB','YHOO',];
 	}
 });
+// --------- ******** CURZIO ************
 App.SaRoute = Ember.Route.extend ({
 	model: function() {
 		return ['RNWK','GWPH','LNN','GOGO','DGI','ARIA',,'SWKS','SAND','WPRT','DBD','RPM','BMS','UVV','LEG','LPI','TGP','MDR','TIBX','NUAN','SWKS','MRVL','ALS.TO','CRAY','CRESY','CSCO','SPN','KKR','STLD'];
 	}
 });
+// --------- ******** SIA ************
 App.P1Route = Ember.Route.extend ({
 	model: function() {
 		return ['JNJ','WMT','MDT','DLB','GLW','ICCC','ERIC','EMC','D','CBI','DVN','L','KMI','TGP','TRGP','OKE','OGS','CHK','SSE','ETE','NFG','APC','EXXI','NG','DRTX','UNP','FCX','NRP','HSY','ATVI','MSFT','HSBC','IMMU','MCD','LO','DO','WRB','AFG','TRV','CB','Y','AXS'];
 	}
 });
+// --------- ******** Area 57 ************
 App.P2Route = Ember.Route.extend ({
 	model: function() {
-		return ['DSUM','DBA','TBT','$VIX','GDX','$SILVER','$NYSI','$NASI','SPY','PSQ','DOG','SH','XLF','$MYY','SBB','$TICK','DUG','REW','SKF','SMN','SCC','SZK','EUM','$BPSPX','$BPHEAL','$BPUTIL','$BPFINA','$BPDISC','T','$BPSTAP','$BPINDY','$XOI','IYR','ROM','SCIF'];
+		return ['C'];
 	}
 });
 // --------- ******** LIKE NOW ************
@@ -47,15 +51,17 @@ App.P4Route = Ember.Route.extend ({
 // --------- ******** Hedge & Macro Indicators ************
 App.P5Route = Ember.Route.extend ({
 	model: function() {
-		return ['$VIX','$BRENT','$USD','$GOLD','DSUM','$SILVER','$NYSI','$NASI','SPY','PSQ','SQQQ','DOG','SH','SIJ','SZK','MYY','MZZ','SDD','SBB','RWM','QID','DXD','SDS','MZZ','HDGE','NYY','TWM','$TICK','DUG','REW','SKF','SMN','SCC','SZK','EUM','IYR','ROM'];
+		return ['$VIX','$BRENT','$USD','$GOLD','DSUM','$SILVER','$NYSI','$NASI','SPY','PSQ','SQQQ','DOG','SH','SIJ','SZK','MYY','MZZ','SDD','SBB','RWM','DBA','TBT','$VIX','GDX','$SILVER','$NYSI','$NASI','SPY','PSQ','DOG','SH','XLF','$MYY','SBB','$TICK','DUG','REW','SKF','SMN','SCC','SZK','EUM','$BPSPX','$BPHEAL','$BPUTIL','$BPFINA','$BPDISC','$BPSTAP','$BPINDY','$XOI','IYR','QID','DXD','SDS','MZZ','HDGE','NYY','TWM','$TICK','DUG','REW','SKF','SMN','SCC','SZK','EUM','IYR','ROM'];
+
 	}
 });
-// --------- ******** DOGS ************
+// --------- ******** DOGS of the Dow ************
 App.P6Route = Ember.Route.extend ({
 	model: function() {
 		return ['CVX','VZ','CAT','CSCO','PFE','IBM','XOM','BA','MRK','INTC'];
 	}
 });
+// --------- ******** Active Portoflio ************
 App.P7Route = Ember.Route.extend ({
 	model: function() {
 		return ['AA-B','ALS.TO','AFL','ABBV','BAX','BXLT','AMZN','ARI','AXS','BMY','CSCO','CAT','DEO','DIS','FB','GE','GILD','GOOG','IPHYF','MFA','NGPHF','NKE','NUV','PEP','TGT','TNH','VZ','WEC','XLU'];
