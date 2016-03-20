@@ -39,10 +39,10 @@ App.P2Route = Ember.Route.extend ({
 // --------- ******** LIKE NOW ************
 App.P3Route = Ember.Route.extend ({
 	model: function() {
-		return ['$LUMBER','EWS','PICK','WY','FXI','QCOM','TNH','MFA','OXY','GILD','NKE','FB','AMZN','GOOG','CVX','VZ','CAT','PFE','SWKS','ALS.TO','MRVL','CRAY','KKR'];
+		return ['$LUMBER','NAT','EWS','PICK','WY','FXI','QCOM','TNH','MFA','OXY','GILD','NKE','FB','AMZN','GOOG','CVX','VZ','CAT','PFE','SWKS','ALS.TO','MRVL','CRAY','KKR'];
 	}
 });
-// --------- ******** LIKE NOW ************
+// --------- ******** Resources Sector Picks ************
 App.P4Route = Ember.Route.extend ({
 	model: function() {
 		return ['BP','NGLS','LINE','ARLP','BBEP','NRP','IIM','JPS','CHL','BMY','AXS','BAX','AFL','GOV','JRO','UUV','COH','KKR','LTL','GMOM','GLAD','AB','JPS','BMO','FRA','AZSEY','IDV','PCL','CME','HSBC','WMT','MCD','MEMP','KO','PG','JNJ','MSFT','BDX','SYY','INTC','AAPL','EPD','DPM','WPZ','KMI','SEP','VNR'];
@@ -58,7 +58,7 @@ App.P5Route = Ember.Route.extend ({
 // --------- ******** DOGS of the Dow ************
 App.P6Route = Ember.Route.extend ({
 	model: function() {
-		return ['CVX','VZ','CAT','CSCO','PFE','IBM','XOM','BA','MRK','INTC'];
+		return ['CVX','VZ','CAT','WMT','CSCO','PFE','IBM','XOM','BA','MRK','INTC'];
 	}
 });
 // --------- ******** Active Portoflio ************
