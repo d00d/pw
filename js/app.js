@@ -35,7 +35,7 @@ App.P2Route = Ember.Route.extend ({
 // --------- ******** LIKE NOW ************
 App.P3Route = Ember.Route.extend ({
 	model: function() {
-		return ['TGP','QCOM','ABBV','TNH','MFA','PEP','OXY','GILD','NKE','FB','AMZN','GOOG','CVX','VZ','CAT','PFE','SWKS','ALS.TO','MRVL','CRAY','KKR'];
+		return ['$LUMBER','EWS','PICK','WY','FXI','QCOM','TNH','MFA','OXY','GILD','NKE','FB','AMZN','GOOG','CVX','VZ','CAT','PFE','SWKS','ALS.TO','MRVL','CRAY','KKR'];
 	}
 });
 // --------- ******** LIKE NOW ************
