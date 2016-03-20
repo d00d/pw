@@ -44,11 +44,13 @@ App.P4Route = Ember.Route.extend ({
 		return ['BP','NGLS','LINE','ARLP','BBEP','NRP','IIM','JPS','CHL','BMY','AXS','BAX','AFL','GOV','JRO','UUV','COH','KKR','LTL','GMOM','GLAD','AB','JPS','BMO','FRA','AZSEY','IDV','PCL','CME','HSBC','WMT','MCD','MEMP','KO','PG','JNJ','MSFT','BDX','SYY','INTC','AAPL','EPD','DPM','WPZ','KMI','SEP','VNR'];
 	}
 });
+// --------- ******** Hedge & Macro Indicators ************
 App.P5Route = Ember.Route.extend ({
 	model: function() {
-		return ['DSUM','$VIX','GDX','$SILVER','$NYSI','$NASI','SPY','PSQ','SQQQ','DOG','SH','SIJ','SZK','MYY','MZZ','SDD','SBB','RWM','QID','DXD','SDS','MZZ','HDGE','NYY','TWM','$TICK','DUG','REW','SKF','SMN','SCC','SZK','EUM','IYR','ROM','SCIF'];
+		return ['$VIX','$BRENT','$USD','$GOLD','DSUM','$SILVER','$NYSI','$NASI','SPY','PSQ','SQQQ','DOG','SH','SIJ','SZK','MYY','MZZ','SDD','SBB','RWM','QID','DXD','SDS','MZZ','HDGE','NYY','TWM','$TICK','DUG','REW','SKF','SMN','SCC','SZK','EUM','IYR','ROM'];
 	}
 });
+// --------- ******** DOGS ************
 App.P6Route = Ember.Route.extend ({
 	model: function() {
 		return ['CVX','VZ','CAT','CSCO','PFE','IBM','XOM','BA','MRK','INTC'];
