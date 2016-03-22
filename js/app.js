@@ -32,9 +32,22 @@ App.P1Route = Ember.Route.extend ({
 });
 // --------- ******** Area 57 ************
 App.P2Route = Ember.Route.extend ({
-	model: function() {
-		return ['C'];
-	}
+/*  model: ->
+    new Ember.RSVP.Promise( (resolve, reject)->
+      resolveSheet = ((sheets, tabletop)->
+        Ember.run ->
+          Ember.run.schedule 'actions', this, ->
+            console.log 'received data', sheets
+            resolve(sheets)
+      )
+
+      Tabletop.init(
+        key: 'x'
+        simpleSheet: false
+        callback: resolveSheet
+        debug: true
+      )
+    )*/
 });
 // --------- ******** LIKE NOW ************
 App.P3Route = Ember.Route.extend ({
