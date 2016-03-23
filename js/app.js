@@ -44,12 +44,12 @@ App.P2Route = Ember.Route.extend ({
   				//var dis = document.getElementById("data").innerHTML = "['" + [ data[0].ticker, data[1].ticker, data[2].ticker ].join("', ") +"']";
   				//return promise;
    		});
-		//return ['JNJ'];
 		//console.log("['" + [ data[0].ticker, data[1].ticker, data[2].ticker ].join("', ") +"']");
-		console.log(data[0]);
+		//console.log(data);
+		//return "['" + [ data[0].ticker, data[1].ticker, data[2].ticker ].join("', ") +"']";
+		// iterate through and pick out ticker only.
 		return data;
 		
-		//return "['" + [ data[0].ticker, data[1].ticker, data[2].ticker ].join("', ") +"']";
   	}
 });
 
@@ -81,7 +81,7 @@ App.P6Route = Ember.Route.extend ({
 // --------- ******** Active Portoflio ************
 App.P7Route = Ember.Route.extend ({
 	model: function() {
-		return ['AA-B','ALS.TO','AFL','ABBV','BAX','BXLT','AMZN','ARI','AXS','BMY','CSCO','CAT','DEO','DIS','FB','GE','GILD','GOOG','IPHYF','MFA','NGPHF','NKE','NUV','PEP','TGT','TNH','VZ','WEC','XLU'];
+		return ['AA-B','ALS.TO','AFL','ABBV','BAX','BXLT','AMZN','ARI','AXS','BMY','CSCO','CAT','DEO','DIS','ELNK','FB','GE','GILD','GOOG','IPHYF','MFA','NGPHF','NKE','NUV','PEP','TGT','TNH','VZ','WEC','XLU'];
 	}
 });
 App.IndexRoute = Ember.Route.extend({
