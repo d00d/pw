@@ -32,23 +32,27 @@ App.P1Route = Ember.Route.extend ({
 });
 // --------- ******** Area 57 ************
 App.P2Route = Ember.Route.extend ({
-/*  model: ->
-    new Ember.RSVP.Promise( (resolve, reject)->
-      resolveSheet = ((sheets, tabletop)->
-        Ember.run ->
-          Ember.run.schedule 'actions', this, ->
-            console.log 'received data', sheets
-            resolve(sheets)
-      )
-
-      Tabletop.init(
-        key: 'x'
-        simpleSheet: false
-        callback: resolveSheet
-        debug: true
-      )
-    )*/
+  model: function() {
+  		var data = new Ember.RSVP.Promise(function(resolve) {
+  			Tabletop.init({
+        		key: '1GREdML1F5LThPDpTXSen_EaIiY8NMWPy4AAEIU1S_gI',
+        		simpleSheet: true,
+        		callback: function(data) {
+        			resolve(data);
+  				}
+  			});
+  				//var dis = document.getElementById("data").innerHTML = "['" + [ data[0].ticker, data[1].ticker, data[2].ticker ].join("', ") +"']";
+  				//return promise;
+   		});
+		//return ['JNJ'];
+		//console.log("['" + [ data[0].ticker, data[1].ticker, data[2].ticker ].join("', ") +"']");
+		console.log(data[0]);
+		return data;
+		
+		//return "['" + [ data[0].ticker, data[1].ticker, data[2].ticker ].join("', ") +"']";
+  	}
 });
+
 // --------- ******** LIKE NOW ************
 App.P3Route = Ember.Route.extend ({
 	model: function() {

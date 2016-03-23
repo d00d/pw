@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <body>
+
+    <p id="data"></p>
+
+    <script type="text/javascript" src="js/libs/tabletop.js"></script>
+    <script type="text/javascript">
+      window.onload = function() { init() };
+      var public_spreadsheet_url = 'https://docs.google.com/spreadsheets/d/1GREdML1F5LThPDpTXSen_EaIiY8NMWPy4AAEIU1S_gI/pubhtml?gid=0&single=true';
+      function init() {
+        Tabletop.init( { key: public_spreadsheet_url,
+                         callback: showInfo,
+                         simpleSheet: true } );
+      }
+      function showInfo(data) {
+        // data comes through as a simple array since simpleSheet is turned on
+        alert("Successfully processed " + data.length + " rows!")
+         document.getElementById("data").innerHTML = "['" + [ data[0].ticker, data[1].ticker, data[2].ticker ].join("', ") +"']";
+        console.log(data);
+      }
+      document.write("The published spreadsheet is located at <a target='_new' href='" + public_spreadsheet_url + "'>" + public_spreadsheet_url + "</a>");        
+    </script>
+  </body>
+</html>

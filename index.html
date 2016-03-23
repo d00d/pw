@@ -9,8 +9,9 @@
 <link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
 </head>
 <body>
-  
+   <script type="text/javascript" src="js/libs/tabletop.js"></script>  
 <script type="text/x-handlebars" id="index">
+
 <div class="navbar">
   <div class="navbar-inner">
     <a class="brand" href="#">Home</a>
@@ -367,6 +368,7 @@
       </div>
    </div>
   </script>
+  <!-- Area 57 -->
   <script type="text/x-handlebars" id="p2">
 <div class="navbar">
   <div class="navbar-inner">
@@ -386,13 +388,13 @@
        <ul>
     {{#each item in model}}
       <li>
-      <b>{{item}} : </b> <a href="http://www.gurufocus.com//stock.php?symbol={{item}}" target="_blank"/> Fundamentals </a><b> : </b>  
-      <a href="http://www.gurufocus.com/dividend/{{item}}" target="_blank"/>Dividend</a>  
-      <!-- <a href="https://finance.yahoo.com/q?s={item}}"/> Yahoo </a> -->
+      <b>{{item.ticker}} : </b> <a href="http://www.gurufocus.com//stock.php?symbol={{item.ticker}}" target="_blank"/> Fundamentals </a><b> : </b>  
+      <a href="http://www.gurufocus.com/dividend/{{item.ticker}}" target="_blank"/>Dividend-{{item.ticker}}</a>  
+      <!-- <a href="https://finance.yahoo.com/q?s={item.ticker}}"/> Yahoo </a> -->
           <br><table><tr><td>
-            <img src="http://stockcharts.com/c-sc/sc?s={{item}}&p=D&b=5&g=0&i=p64176622437&r=1457665058631"/>
+            <img src="http://stockcharts.com/c-sc/sc?s={{item.ticker}}&p=D&b=5&g=0&i=p64176622437&r=1457665058631"/>
             </td><td>
-            <img src="http://stockcharts.com/c-sc/sc?s={{item}}&p=W&b=5&g=0&i=t99261714081&r=1408323404116"/>
+            <img src="http://stockcharts.com/c-sc/sc?s={{item.ticker}}&p=W&b=5&g=0&i=t99261714081&r=1408323404116"/>
             </td></tr></table>
           <br>
 
