@@ -5,25 +5,26 @@
   <title>Portfolio Walker</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
-<link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
-<link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+<link href="https://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+<link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
 </head>
 <body>
-  
+   <script type="text/javascript" src="js/libs/tabletop.js"></script>  
 <script type="text/x-handlebars" id="index">
+
 <div class="navbar">
   <div class="navbar-inner">
     <a class="brand" href="#">Home</a>
     <ul class="nav">
-      <li>{{#link-to 'rrd'}}RRD{{/link-to}}</li>
-      <li>{{#link-to 'sa'}}curzio{{/link-to}}</li>
+      <li>{{#link-to 'rrd'}}Priors{{/link-to}}</li>
+      <li>{{#link-to 'sa'}}NL1{{/link-to}}</li>
       <li>{{#link-to 'p1'}}SIA{{/link-to}}</li>
-      <li>{{#link-to 'p2'}}indicators{{/link-to}}</li>
-      <li>{{#link-to 'p3'}}like now{{/link-to}}</li>
-      <li>{{#link-to 'p4'}}RM{{/link-to}}</li>
-      <li>{{#link-to 'p5'}}HDG{{/link-to}}</li> 
-      <li>{{#link-to 'p6'}}Dogs{{/link-to}}</li>
-      <li>{{#link-to 'p7'}}ActivePortfolio{{/link-to}}</li>
+      <li>{{#link-to 'p2'}}AREA 57{{/link-to}}</li>
+      <li>{{#link-to 'p3'}}On-Deck{{/link-to}}</li>
+      <li>{{#link-to 'p4'}}Resource{{/link-to}}</li>
+      <li>{{#link-to 'p5'}}Hedges & Indicators {{/link-to}}</li> 
+      <li>{{#link-to 'p6'}}Dogs Dow {{/link-to}}</li>
+      <li>{{#link-to 'p7'}}Current Holdings{{/link-to}}</li>
       </ul>
       </div>
    </div>
@@ -31,7 +32,11 @@
         <ul class="nav">
     {{#each item in model}}
       <li>
-        <a href="http://www.gurufocus.com//stock.php?symbol={{item}}" target="_blank"/>{{item}} -- GF Fundamentals</a>  
+        <b>{{item}} : </b> 
+				<a href="http://www.gurufocus.com//stock.php?symbol={{item}}" target="_blank"/> Fundamentals </a><b> : </b>
+				<a href="http://www.gurufocus.com/dividend/{{item}}" target="_blank"/>Dividend</a>
+				<b> : </b><a href="http://seekingalpha.com/symbol/{{item}}" target="_blank"/>Analysis</a>  
+
         <!-- <a href="https://finance.yahoo.com/q?s={item}}"/> Yahoo </a> -->
           <br><table><tr><td>
             <img src="http://stockcharts.com/c-sc/sc?s={{item}}&p=D&b=5&g=0&i=p64176622437&r=1457665058631"/>
@@ -48,15 +53,15 @@
   <div class="navbar-inner">
     <a class="brand" href="#">Home</a>
     <ul class="nav">
-      <li>{{#link-to 'rrd'}}RRD{{/link-to}}</li>
-      <li>{{#link-to 'sa'}}curzio{{/link-to}}</li>
+      <li>{{#link-to 'rrd'}}Priors{{/link-to}}</li>
+      <li>{{#link-to 'sa'}}NL1{{/link-to}}</li>
       <li>{{#link-to 'p1'}}SIA{{/link-to}}</li>
-      <li>{{#link-to 'p2'}}indicators{{/link-to}}</li>
-      <li>{{#link-to 'p3'}}like now{{/link-to}}</li>
-      <li>{{#link-to 'p4'}}RM{{/link-to}}</li>
-      <li>{{#link-to 'p5'}}HDG{{/link-to}}</li> 
-      <li>{{#link-to 'p6'}}Dogs{{/link-to}}</li> 
-      <li>{{#link-to 'p7'}}ActivePortfolio{{/link-to}}</li>
+      <li>{{#link-to 'p2'}}AREA 57{{/link-to}}</li>
+      <li>{{#link-to 'p3'}}On-Deck{{/link-to}}</li>
+      <li>{{#link-to 'p4'}}Resource{{/link-to}}</li>
+      <li>{{#link-to 'p5'}}Hedges & Indicators {{/link-to}}</li> 
+      <li>{{#link-to 'p6'}}Dogs Dow {{/link-to}}</li> 
+      <li>{{#link-to 'p7'}}Current Holdings{{/link-to}}</li>
       </ul>
       </div>
    </div>
@@ -67,21 +72,23 @@
   <div class="navbar-inner">
     <a class="brand" href="#">Home</a>
     <ul class="nav">
-      <li>{{#link-to 'rrd'}}RRD{{/link-to}}</li>
-      <li>{{#link-to 'sa'}}curzio{{/link-to}}</li>
+      <li>{{#link-to 'rrd'}}Priors{{/link-to}}</li>
+      <li>{{#link-to 'sa'}}NL1{{/link-to}}</li>
       <li>{{#link-to 'p1'}}SIA{{/link-to}}</li>
-      <li>{{#link-to 'p2'}}indicators{{/link-to}}</li>
-      <li>{{#link-to 'p3'}}like now{{/link-to}}</li>
-      <li>{{#link-to 'p4'}}RM{{/link-to}}</li>
-      <li>{{#link-to 'p5'}}HDG{{/link-to}}</li> 
-      <li>{{#link-to 'p6'}}Dogs{{/link-to}}</li>
-      <li>{{#link-to 'p7'}}ActivePortfolio{{/link-to}}</li>
+      <li>{{#link-to 'p2'}}AREA 57{{/link-to}}</li>
+      <li>{{#link-to 'p3'}}On-Deck{{/link-to}}</li>
+      <li>{{#link-to 'p4'}}Resource{{/link-to}}</li>
+      <li>{{#link-to 'p5'}}Hedges & Indicators {{/link-to}}</li> 
+      <li>{{#link-to 'p6'}}Dogs Dow {{/link-to}}</li>
+      <li>{{#link-to 'p7'}}Current Holdings{{/link-to}}</li>
       </ul>
       </div>
        <ul>
     {{#each item in model}}
       <li>
-      <a href="http://www.gurufocus.com//stock.php?symbol={{item}}" target="_blank"/>{{item}} -- GF Fundamentals</a>  
+      <b>{{item}} : </b> <a href="http://www.gurufocus.com//stock.php?symbol={{item}}" target="_blank"/> Fundamentals</a><b> : </b>  
+      <a href="http://www.gurufocus.com/divdend/{{item}}" target="_blank"/>Dividend</a>  
+			
       <!-- <a href="https://finance.yahoo.com/q?s={item}}"/> Yahoo </a> -->
           <br><table><tr><td>
             <img src="http://stockcharts.com/c-sc/sc?s={{item}}&p=D&b=5&g=0&i=p64176622437&r=1457665058631"/>
@@ -98,15 +105,15 @@
   <div class="navbar-inner">
     <a class="brand" href="#">Home</a>
     <ul class="nav">
-      <li>{{#link-to 'rrd'}}RRD{{/link-to}}</li>
-      <li>{{#link-to 'sa'}}curzio{{/link-to}}</li>
+      <li>{{#link-to 'rrd'}}Priors{{/link-to}}</li>
+      <li>{{#link-to 'sa'}}NL1{{/link-to}}</li>
       <li>{{#link-to 'p1'}}SIA{{/link-to}}</li>
-      <li>{{#link-to 'p2'}}indicators{{/link-to}}</li>
-      <li>{{#link-to 'p3'}}like now{{/link-to}}</li>
-      <li>{{#link-to 'p4'}}RM{{/link-to}}</li>
-      <li>{{#link-to 'p5'}}HDG{{/link-to}}</li>
-      <li>{{#link-to 'p6'}}Dogs{{/link-to}}</li>
-      <li>{{#link-to 'p7'}}ActivePortfolio{{/link-to}}</li>
+      <li>{{#link-to 'p2'}}AREA 57{{/link-to}}</li>
+      <li>{{#link-to 'p3'}}On-Deck{{/link-to}}</li>
+      <li>{{#link-to 'p4'}}Resource{{/link-to}}</li>
+      <li>{{#link-to 'p5'}}Hedges & Indicators {{/link-to}}</li>
+      <li>{{#link-to 'p6'}}Dogs Dow {{/link-to}}</li>
+      <li>{{#link-to 'p7'}}Current Holdings{{/link-to}}</li>
       </ul>
       </div>
    </div>
@@ -117,21 +124,25 @@
   <div class="navbar-inner">
     <a class="brand" href="#">Home</a>
     <ul class="nav">
-      <li>{{#link-to 'rrd'}}RRD{{/link-to}}</li>
-      <li>{{#link-to 'sa'}}curzio{{/link-to}}</li>
+      <li>{{#link-to 'rrd'}}Priors{{/link-to}}</li>
+      <li>{{#link-to 'sa'}}NL1{{/link-to}}</li>
       <li>{{#link-to 'p1'}}SIA{{/link-to}}</li>
-      <li>{{#link-to 'p2'}}indicators{{/link-to}}</li>
-      <li>{{#link-to 'p3'}}like now{{/link-to}}</li>
-      <li>{{#link-to 'p4'}}RM{{/link-to}}</li>
-      <li>{{#link-to 'p5'}}HDG{{/link-to}}</li>
-      <li>{{#link-to 'p6'}}Dogs{{/link-to}}</li>
-      <li>{{#link-to 'p7'}}ActivePortfolio{{/link-to}}</li>
+      <li>{{#link-to 'p2'}}AREA 57{{/link-to}}</li>
+      <li>{{#link-to 'p3'}}On-Deck{{/link-to}}</li>
+      <li>{{#link-to 'p4'}}Resource{{/link-to}}</li>
+      <li>{{#link-to 'p5'}}Hedges & Indicators {{/link-to}}</li>
+      <li>{{#link-to 'p6'}}Dogs Dow {{/link-to}}</li>
+      <li>{{#link-to 'p7'}}Current Holdings{{/link-to}}</li>
       </ul>
       </div>
        <ul>
     {{#each item in model}}
       <li>
-      <a href="http://www.gurufocus.com//stock.php?symbol={{item}}" target="_blank"/>{{item}} -- GF Fundamentals</a>  
+      <b>{{item}} : </b> <a href="http://www.gurufocus.com//stock.php?symbol={{item}}" target="_blank"/> Fundamentals </a>
+			<b> : </b> 
+			<a href="http://www.gurufocus.com/dividend/{{item}}" target="_blank"/>Dividend</a>
+      <b> : </b> 				
+			<a href="http://seekingalpha.com/symbol/{{item}}<a href="http://seekingalpha.com/symbol/{{item}}" target="_blank"/>Analysis</a>
       <!-- <a href="https://finance.yahoo.com/q?s={item}}"/> Yahoo </a> -->
           <br><table><tr><td>
             <img src="http://stockcharts.com/c-sc/sc?s={{item}}&p=D&b=5&g=0&i=p64176622437&r=1457665058631"/>
@@ -148,15 +159,15 @@
   <div class="navbar-inner">
     <a class="brand" href="#">Home</a>
     <ul class="nav">
-      <li>{{#link-to 'rrd'}}RRD{{/link-to}}</li>
-      <li>{{#link-to 'sa'}}curzio{{/link-to}}</li>
+      <li>{{#link-to 'rrd'}}Priors{{/link-to}}</li>
+      <li>{{#link-to 'sa'}}NL1{{/link-to}}</li>
       <li>{{#link-to 'p1'}}SIA{{/link-to}}</li>
-      <li>{{#link-to 'p2'}}indicators{{/link-to}}</li>
-      <li>{{#link-to 'p3'}}like now{{/link-to}}</li>
-      <li>{{#link-to 'p4'}}RM{{/link-to}}</li>
-      <li>{{#link-to 'p5'}}HDG{{/link-to}}</li> 
-      <li>{{#link-to 'p6'}}Dogs{{/link-to}}</li>
-      <li>{{#link-to 'p7'}}ActivePortfolio{{/link-to}}</li>
+      <li>{{#link-to 'p2'}}AREA 57{{/link-to}}</li>
+      <li>{{#link-to 'p3'}}On-Deck{{/link-to}}</li>
+      <li>{{#link-to 'p4'}}Resource{{/link-to}}</li>
+      <li>{{#link-to 'p5'}}Hedges & Indicators {{/link-to}}</li> 
+      <li>{{#link-to 'p6'}}Dogs Dow {{/link-to}}</li>
+      <li>{{#link-to 'p7'}}Current Holdings{{/link-to}}</li>
       </ul>
       </div>
    </div>
@@ -167,21 +178,22 @@
   <div class="navbar-inner">
     <a class="brand" href="#">Home</a>
     <ul class="nav">
-      <li>{{#link-to 'rrd'}}RRD{{/link-to}}</li>
-      <li>{{#link-to 'sa'}}curzio{{/link-to}}</li>
+      <li>{{#link-to 'rrd'}}Priors{{/link-to}}</li>
+      <li>{{#link-to 'sa'}}NL1{{/link-to}}</li>
       <li>{{#link-to 'p1'}}SIA{{/link-to}}</li>
-      <li>{{#link-to 'p2'}}indicators{{/link-to}}</li>
-      <li>{{#link-to 'p3'}}like now{{/link-to}}</li>
-      <li>{{#link-to 'p4'}}RM{{/link-to}}</li>
-      <li>{{#link-to 'p5'}}HDG{{/link-to}}</li> 
-      <li>{{#link-to 'p6'}}Dogs{{/link-to}}</li>
-      <li>{{#link-to 'p7'}}ActivePortfolio{{/link-to}}</li>
+      <li>{{#link-to 'p2'}}AREA 57{{/link-to}}</li>
+      <li>{{#link-to 'p3'}}On-Deck{{/link-to}}</li>
+      <li>{{#link-to 'p4'}}Resource{{/link-to}}</li>
+      <li>{{#link-to 'p5'}}Hedges & Indicators {{/link-to}}</li> 
+      <li>{{#link-to 'p6'}}Dogs Dow {{/link-to}}</li>
+      <li>{{#link-to 'p7'}}Current Holdings{{/link-to}}</li>
       </ul>
       </div>
        <ul>
     {{#each item in model}}
       <li>
-      <a href="http://www.gurufocus.com//stock.php?symbol={{item}}" target="_blank"/>{{item}} -- GF Fundamentals</a>  
+      <b>{{item}} : </b> <a href="http://www.gurufocus.com//stock.php?symbol={{item}}" target="_blank"/> Fundamentals </a><b> : </b>  
+<b> : </b> 				<a href="http://seekingalpha.com/symbol/{{item}}" target="_blank"/>Analysis</a>  
       <!-- <a href="https://finance.yahoo.com/q?s={item}}"/> Yahoo </a> -->
           <br><table><tr><td>
             <img src="http://stockcharts.com/c-sc/sc?s={{item}}&p=D&b=5&g=0&i=p64176622437&r=1457665058631"/>
@@ -198,15 +210,15 @@
   <div class="navbar-inner">
     <a class="brand" href="#">Home</a>
     <ul class="nav">
-      <li>{{#link-to 'rrd'}}RRD{{/link-to}}</li>
-      <li>{{#link-to 'sa'}}curzio{{/link-to}}</li>
+      <li>{{#link-to 'rrd'}}Priors{{/link-to}}</li>
+      <li>{{#link-to 'sa'}}NL1{{/link-to}}</li>
       <li>{{#link-to 'p1'}}SIA{{/link-to}}</li>
-      <li>{{#link-to 'p2'}}indicators{{/link-to}}</li>
-      <li>{{#link-to 'p3'}}like now{{/link-to}}</li>
-      <li>{{#link-to 'p4'}}RM{{/link-to}}</li>
-      <li>{{#link-to 'p5'}}HDG{{/link-to}}</li> 
-      <li>{{#link-to 'p6'}}Dogs{{/link-to}}</li>
-      <li>{{#link-to 'p7'}}ActivePortfolio{{/link-to}}</li>
+      <li>{{#link-to 'p2'}}AREA 57{{/link-to}}</li>
+      <li>{{#link-to 'p3'}}On-Deck{{/link-to}}</li>
+      <li>{{#link-to 'p4'}}Resource{{/link-to}}</li>
+      <li>{{#link-to 'p5'}}Hedges & Indicators {{/link-to}}</li> 
+      <li>{{#link-to 'p6'}}Dogs Dow {{/link-to}}</li>
+      <li>{{#link-to 'p7'}}Current Holdings{{/link-to}}</li>
       </ul>
       </div>
    </div>
@@ -217,22 +229,22 @@
   <div class="navbar-inner">
     <a class="brand" href="#">Home</a>
     <ul class="nav">
-      <li>{{#link-to 'rrd'}}RRD{{/link-to}}</li>
-      <li>{{#link-to 'sa'}}curzio{{/link-to}}</li>
+      <li>{{#link-to 'rrd'}}Priors{{/link-to}}</li>
+      <li>{{#link-to 'sa'}}NL1{{/link-to}}</li>
       <li>{{#link-to 'p1'}}SIA{{/link-to}}</li>
-      <li>{{#link-to 'p2'}}indicators{{/link-to}}</li>
-      <li>{{#link-to 'p3'}}like now{{/link-to}}</li>
-      <li>{{#link-to 'p4'}}RM{{/link-to}}</li>
-      <li>{{#link-to 'p5'}}HDG{{/link-to}}</li> 
-      <li>{{#link-to 'p6'}}Dogs{{/link-to}}</li>
-      <li>{{#link-to 'p7'}}ActivePortfolio{{/link-to}}</li>
+      <li>{{#link-to 'p2'}}AREA 57{{/link-to}}</li>
+      <li>{{#link-to 'p3'}}On-Deck{{/link-to}}</li>
+      <li>{{#link-to 'p4'}}Resource{{/link-to}}</li>
+      <li>{{#link-to 'p5'}}Hedges & Indicators {{/link-to}}</li> 
+      <li>{{#link-to 'p6'}}Dogs Dow {{/link-to}}</li>
+      <li>{{#link-to 'p7'}}Current Holdings{{/link-to}}</li>
       </ul>
       </div>
        <ul>
     {{#each item in model}}
       <li>
-      <a href="http://www.gurufocus.com//stock.php?symbol={{item}}" target="_blank"/>{{item}} -- GF Fundamentals</a> 
-      <!-- <a href="https://finance.yahoo.com/q?s={item}}"/> Yahoo </a> -->
+      <b>{{item}} : </b> <a href="http://www.gurufocus.com//stock.php?symbol={{item}}" target="_blank"/> Fundamentals </a><b> : </b>  
+<b> : </b> 				<a href="http://seekingalpha.com/symbol/{{item}}" target="_blank"/>Analysis</a>  
           <br><table><tr><td>
             <img src="http://stockcharts.com/c-sc/sc?s={{item}}&p=D&b=5&g=0&i=p64176622437&r=1457665058631"/>
             </td><td>
@@ -248,15 +260,15 @@
   <div class="navbar-inner">
     <a class="brand" href="#">Home</a>
     <ul class="nav">
-      <li>{{#link-to 'rrd'}}RRD{{/link-to}}</li>
-      <li>{{#link-to 'sa'}}curzio{{/link-to}}</li>
+      <li>{{#link-to 'rrd'}}Priors{{/link-to}}</li>
+      <li>{{#link-to 'sa'}}NL1{{/link-to}}</li>
       <li>{{#link-to 'p1'}}SIA{{/link-to}}</li>
-      <li>{{#link-to 'p2'}}indicators{{/link-to}}</li>
-      <li>{{#link-to 'p3'}}like now{{/link-to}}</li>
-      <li>{{#link-to 'p4'}}RM{{/link-to}}</li>
-      <li>{{#link-to 'p5'}}HDG{{/link-to}}</li> 
-      <li>{{#link-to 'p6'}}Dogs{{/link-to}}</li>
-      <li>{{#link-to 'p7'}}ActivePortfolio{{/link-to}}</li>
+      <li>{{#link-to 'p2'}}AREA 57{{/link-to}}</li>
+      <li>{{#link-to 'p3'}}On-Deck{{/link-to}}</li>
+      <li>{{#link-to 'p4'}}Resource{{/link-to}}</li>
+      <li>{{#link-to 'p5'}}Hedges & Indicators {{/link-to}}</li> 
+      <li>{{#link-to 'p6'}}Dogs Dow {{/link-to}}</li>
+      <li>{{#link-to 'p7'}}Current Holdings{{/link-to}}</li>
       </ul>
       </div>
    </div>
@@ -267,21 +279,22 @@
   <div class="navbar-inner">
     <a class="brand" href="#">Home</a>
     <ul class="nav">
-      <li>{{#link-to 'rrd'}}RRD{{/link-to}}</li>
-      <li>{{#link-to 'sa'}}curzio{{/link-to}}</li>
+      <li>{{#link-to 'rrd'}}Priors{{/link-to}}</li>
+      <li>{{#link-to 'sa'}}NL1{{/link-to}}</li>
       <li>{{#link-to 'p1'}}SIA{{/link-to}}</li>
-      <li>{{#link-to 'p2'}}indicators{{/link-to}}</li>
-      <li>{{#link-to 'p3'}}like now{{/link-to}}</li>
-      <li>{{#link-to 'p4'}}RM{{/link-to}}</li>
-      <li>{{#link-to 'p5'}}HDG{{/link-to}}</li>
-      <li>{{#link-to 'p6'}}Dogs{{/link-to}}</li>
-      <li>{{#link-to 'p7'}}ActivePortfolio{{/link-to}}</li>
+      <li>{{#link-to 'p2'}}AREA 57{{/link-to}}</li>
+      <li>{{#link-to 'p3'}}On-Deck{{/link-to}}</li>
+      <li>{{#link-to 'p4'}}Resource{{/link-to}}</li>
+      <li>{{#link-to 'p5'}}Hedges & Indicators {{/link-to}}</li>
+      <li>{{#link-to 'p6'}}Dogs Dow {{/link-to}}</li>
+      <li>{{#link-to 'p7'}}Current Holdings{{/link-to}}</li>
       </ul>
       </div>
        <ul>
     {{#each item in model}}
       <li>
-      <a href="http://www.gurufocus.com//stock.php?symbol={{item}}" target="_blank"/>{{item}} -- GF Fundamentals</a>  
+      <b>{{item}} : </b> <a href="http://www.gurufocus.com//stock.php?symbol={{item}}" target="_blank"/> Fundamentals </a>
+      <b> : </b><b> : </b> <a href="http://seekingalpha.com/symbol/{{item}}" target="_blank"/>Analysis</a>  
       <!-- <a href="https://finance.yahoo.com/q?s={item}}"/> Yahoo </a> -->
           <br><table><tr><td>
             <img src="http://stockcharts.com/c-sc/sc?s={{item}}&p=D&b=5&g=0&i=p64176622437&r=1457665058631"/>
@@ -298,15 +311,15 @@
   <div class="navbar-inner">
     <a class="brand" href="#">Home</a>
     <ul class="nav">
-      <li>{{#link-to 'rrd'}}RRD{{/link-to}}</li>
-      <li>{{#link-to 'sa'}}curzio{{/link-to}}</li>
+      <li>{{#link-to 'rrd'}}Priors{{/link-to}}</li>
+      <li>{{#link-to 'sa'}}NL1{{/link-to}}</li>
       <li>{{#link-to 'p1'}}SIA{{/link-to}}</li>
-      <li>{{#link-to 'p2'}}indicators{{/link-to}}</li>
-      <li>{{#link-to 'p3'}}like now{{/link-to}}</li>
-      <li>{{#link-to 'p4'}}RM{{/link-to}}</li>
-      <li>{{#link-to 'p5'}}HDG{{/link-to}}</li>
-      <li>{{#link-to 'p6'}}Dogs{{/link-to}}</li>
-      <li>{{#link-to 'p7'}}ActivePortfolio{{/link-to}}</li>
+      <li>{{#link-to 'p2'}}AREA 57{{/link-to}}</li>
+      <li>{{#link-to 'p3'}}On-Deck{{/link-to}}</li>
+      <li>{{#link-to 'p4'}}Resource{{/link-to}}</li>
+      <li>{{#link-to 'p5'}}Hedges & Indicators {{/link-to}}</li>
+      <li>{{#link-to 'p6'}}Dogs Dow {{/link-to}}</li>
+      <li>{{#link-to 'p7'}}Current Holdings{{/link-to}}</li>
       </ul>
       </div>
    </div>
@@ -317,21 +330,22 @@
   <div class="navbar-inner">
     <a class="brand" href="#">Home</a>
     <ul class="nav">
-      <li>{{#link-to 'rrd'}}RRD{{/link-to}}</li>
-      <li>{{#link-to 'sa'}}curzio{{/link-to}}</li>
+      <li>{{#link-to 'rrd'}}Priors{{/link-to}}</li>
+      <li>{{#link-to 'sa'}}NL1{{/link-to}}</li>
       <li>{{#link-to 'p1'}}SIA{{/link-to}}</li>
-      <li>{{#link-to 'p2'}}indicators{{/link-to}}</li>
-      <li>{{#link-to 'p3'}}like now{{/link-to}}</li>
-      <li>{{#link-to 'p4'}}RM{{/link-to}}</li>
-      <li>{{#link-to 'p5'}}HDG{{/link-to}}</li>
-      <li>{{#link-to 'p6'}}Dogs{{/link-to}}</li>
-      <li>{{#link-to 'p7'}}ActivePortfolio{{/link-to}}</li>
+      <li>{{#link-to 'p2'}}AREA 57{{/link-to}}</li>
+      <li>{{#link-to 'p3'}}On-Deck{{/link-to}}</li>
+      <li>{{#link-to 'p4'}}Resource{{/link-to}}</li>
+      <li>{{#link-to 'p5'}}Hedges & Indicators {{/link-to}}</li>
+      <li>{{#link-to 'p6'}}Dogs Dow {{/link-to}}</li>
+      <li>{{#link-to 'p7'}}Current Holdings{{/link-to}}</li>
       </ul>
       </div>
        <ul>
     {{#each item in model}}
       <li>
-      <a href="http://www.gurufocus.com//stock.php?symbol={{item}}" target="_blank"/>{{item}} -- GF Fundamentals</a>  
+      <b>{{item}} : </b> <a href="http://www.gurufocus.com//stock.php?symbol={{item}}" target="_blank"/> Fundamentals </a><b> : </b>  
+<b> : </b> 				<a href="http://seekingalpha.com/symbol/{{item}}" target="_blank"/>Analysis</a>  
       <!-- <a href="https://finance.yahoo.com/q?s={item}}"/> Yahoo </a> -->
           <br><table><tr><td>
             <img src="http://stockcharts.com/c-sc/sc?s={{item}}&p=D&b=5&g=0&i=p64176622437&r=1457665058631"/>
@@ -348,44 +362,46 @@
   <div class="navbar-inner">
     <a class="brand" href="#">Home</a>
     <ul class="nav">
-      <li>{{#link-to 'rrd'}}RRD{{/link-to}}</li>
-      <li>{{#link-to 'sa'}}curzio{{/link-to}}</li>
+      <li>{{#link-to 'rrd'}}Priors{{/link-to}}</li>
+      <li>{{#link-to 'sa'}}NL1{{/link-to}}</li>
       <li>{{#link-to 'p1'}}SIA{{/link-to}}</li>
-      <li>{{#link-to 'p2'}}indicators{{/link-to}}</li>
-      <li>{{#link-to 'p3'}}like now{{/link-to}}</li>
-      <li>{{#link-to 'p4'}}RM{{/link-to}}</li>
-      <li>{{#link-to 'p5'}}HDG{{/link-to}}</li> 
-      <li>{{#link-to 'p6'}}Dogs{{/link-to}}</li>
-      <li>{{#link-to 'p7'}}ActivePortfolio{{/link-to}}</li>
+      <li>{{#link-to 'p2'}}AREA 57{{/link-to}}</li>
+      <li>{{#link-to 'p3'}}On-Deck{{/link-to}}</li>
+      <li>{{#link-to 'p4'}}Resource{{/link-to}}</li>
+      <li>{{#link-to 'p5'}}Hedges & Indicators {{/link-to}}</li> 
+      <li>{{#link-to 'p6'}}Dogs Dow {{/link-to}}</li>
+      <li>{{#link-to 'p7'}}Current Holdings{{/link-to}}</li>
       </ul>
       </div>
    </div>
   </script>
+  <!-- Area 57 -->
   <script type="text/x-handlebars" id="p2">
 <div class="navbar">
   <div class="navbar-inner">
     <a class="brand" href="#">Home</a>
     <ul class="nav">
-      <li>{{#link-to 'rrd'}}RRD{{/link-to}}</li>
-      <li>{{#link-to 'sa'}}curzio{{/link-to}}</li>
+      <li>{{#link-to 'rrd'}}Priors{{/link-to}}</li>
+      <li>{{#link-to 'sa'}}NL1{{/link-to}}</li>
       <li>{{#link-to 'p1'}}SIA{{/link-to}}</li>
-      <li>{{#link-to 'p2'}}indicators{{/link-to}}</li>
-      <li>{{#link-to 'p3'}}like now{{/link-to}}</li>
-      <li>{{#link-to 'p4'}}RM{{/link-to}}</li>
-      <li>{{#link-to 'p5'}}HDG{{/link-to}}</li>
-      <li>{{#link-to 'p6'}}Dogs{{/link-to}}</li>
-      <li>{{#link-to 'p7'}}ActivePortfolio{{/link-to}}</li>
+      <li>{{#link-to 'p2'}}AREA 57{{/link-to}}</li>
+      <li>{{#link-to 'p3'}}On-Deck{{/link-to}}</li>
+      <li>{{#link-to 'p4'}}Resource{{/link-to}}</li>
+      <li>{{#link-to 'p5'}}Hedges & Indicators {{/link-to}}</li>
+      <li>{{#link-to 'p6'}}Dogs Dow {{/link-to}}</li>
+      <li>{{#link-to 'p7'}}Current Holdings{{/link-to}}</li>
       </ul>
       </div>
        <ul>
     {{#each item in model}}
       <li>
-      <a href="http://www.gurufocus.com//stock.php?symbol={{item}}" target="_blank"/>{{item}} -- GF Fundamentals</a>  
-      <!-- <a href="https://finance.yahoo.com/q?s={item}}"/> Yahoo </a> -->
+      <b>{{item.ticker}} : </b> <a href="http://www.gurufocus.com//stock.php?symbol={{item.ticker}}" target="_blank"/> Fundamentals </a><b> : </b>  
+      <a href="http://www.gurufocus.com/dividend/{{item.ticker}}" target="_blank"/>Dividend-{{item.ticker}}</a>  
+      <!-- <a href="https://finance.yahoo.com/q?s={item.ticker}}"/> Yahoo </a> -->
           <br><table><tr><td>
-            <img src="http://stockcharts.com/c-sc/sc?s={{item}}&p=D&b=5&g=0&i=p64176622437&r=1457665058631"/>
+            <img src="http://stockcharts.com/c-sc/sc?s={{item.ticker}}&p=D&b=5&g=0&i=p64176622437&r=1457665058631"/>
             </td><td>
-            <img src="http://stockcharts.com/c-sc/sc?s={{item}}&p=W&b=5&g=0&i=t99261714081&r=1408323404116"/>
+            <img src="http://stockcharts.com/c-sc/sc?s={{item.ticker}}&p=W&b=5&g=0&i=t99261714081&r=1408323404116"/>
             </td></tr></table>
           <br>
 
@@ -397,15 +413,15 @@
   <div class="navbar-inner">
     <a class="brand" href="#">Home</a>
     <ul class="nav">
-      <li>{{#link-to 'rrd'}}RRD{{/link-to}}</li>
-      <li>{{#link-to 'sa'}}curzio{{/link-to}}</li>
+      <li>{{#link-to 'rrd'}}Priors{{/link-to}}</li>
+      <li>{{#link-to 'sa'}}NL1{{/link-to}}</li>
       <li>{{#link-to 'p1'}}SIA{{/link-to}}</li>
-      <li>{{#link-to 'p2'}}indicators{{/link-to}}</li>
-      <li>{{#link-to 'p3'}}like now{{/link-to}}</li>
-      <li>{{#link-to 'p4'}}RM{{/link-to}}</li>
-      <li>{{#link-to 'p5'}}HDG{{/link-to}}</li> 
-      <li>{{#link-to 'p6'}}Dogs{{/link-to}}</li>
-      <li>{{#link-to 'p7'}}ActivePortfolio{{/link-to}}</li>
+      <li>{{#link-to 'p2'}}AREA 57{{/link-to}}</li>
+      <li>{{#link-to 'p3'}}On-Deck{{/link-to}}</li>
+      <li>{{#link-to 'p4'}}Resource{{/link-to}}</li>
+      <li>{{#link-to 'p5'}}Hedges & Indicators {{/link-to}}</li> 
+      <li>{{#link-to 'p6'}}Dogs Dow {{/link-to}}</li>
+      <li>{{#link-to 'p7'}}Current Holdings{{/link-to}}</li>
       </ul>
       </div>
    </div>
@@ -415,21 +431,22 @@
   <div class="navbar-inner">
     <a class="brand" href="#">Home</a>
     <ul class="nav">
-      <li>{{#link-to 'rrd'}}RRD{{/link-to}}</li>
-      <li>{{#link-to 'sa'}}curzio{{/link-to}}</li>
+      <li>{{#link-to 'rrd'}}Priors{{/link-to}}</li>
+      <li>{{#link-to 'sa'}}NL1{{/link-to}}</li>
       <li>{{#link-to 'p1'}}SIA{{/link-to}}</li>
-      <li>{{#link-to 'p2'}}indicators{{/link-to}}</li>
-      <li>{{#link-to 'p3'}}like now{{/link-to}}</li>
-      <li>{{#link-to 'p4'}}RM{{/link-to}}</li>
-      <li>{{#link-to 'p5'}}HDG{{/link-to}}</li>
-      <li>{{#link-to 'p6'}}Dogs{{/link-to}}</li>
-      <li>{{#link-to 'p7'}}ActivePortfolio{{/link-to}}</li>
+      <li>{{#link-to 'p2'}}AREA 57{{/link-to}}</li>
+      <li>{{#link-to 'p3'}}On-Deck{{/link-to}}</li>
+      <li>{{#link-to 'p4'}}Resource{{/link-to}}</li>
+      <li>{{#link-to 'p5'}}Hedges & Indicators {{/link-to}}</li>
+      <li>{{#link-to 'p6'}}Dogs Dow {{/link-to}}</li>
+      <li>{{#link-to 'p7'}}Current Holdings{{/link-to}}</li>
       </ul>
       </div>
        <ul>
     {{#each item in model}}
       <li>
-      <a href="http://www.gurufocus.com//stock.php?symbol={{item}}" target="_blank"/>{{item}} -- GF Fundamentals</a>  
+      <b>{{item}} : </b> <a href="http://www.gurufocus.com//stock.php?symbol={{item}}" target="_blank"/> Fundamentals </a><b> : </b>  
+<b> : </b> 				<a href="http://seekingalpha.com/symbol/{{item}}" target="_blank"/>Analysis</a>  
       <!-- <a href="https://finance.yahoo.com/q?s={item}}"/> Yahoo </a> -->
           <br><table><tr><td>
             <img src="http://stockcharts.com/c-sc/sc?s={{item}}&p=D&b=5&g=0&i=p64176622437&r=1457665058631"/>
@@ -446,15 +463,15 @@
   <div class="navbar-inner">
     <a class="brand" href="#">Home</a>
     <ul class="nav">
-      <li>{{#link-to 'rrd'}}RRD{{/link-to}}</li>
-      <li>{{#link-to 'sa'}}curzio{{/link-to}}</li>
+      <li>{{#link-to 'rrd'}}Priors{{/link-to}}</li>
+      <li>{{#link-to 'sa'}}NL1{{/link-to}}</li>
       <li>{{#link-to 'p1'}}SIA{{/link-to}}</li>
-      <li>{{#link-to 'p2'}}indicators{{/link-to}}</li>
-      <li>{{#link-to 'p3'}}like now{{/link-to}}</li>
-      <li>{{#link-to 'p4'}}RM{{/link-to}}</li>
-      <li>{{#link-to 'p5'}}HDG{{/link-to}}</li> 
-      <li>{{#link-to 'p6'}}Dogs{{/link-to}}</li>
-      <li>{{#link-to 'p7'}}ActivePortfolio{{/link-to}}</li>
+      <li>{{#link-to 'p2'}}AREA 57{{/link-to}}</li>
+      <li>{{#link-to 'p3'}}On-Deck{{/link-to}}</li>
+      <li>{{#link-to 'p4'}}Resource{{/link-to}}</li>
+      <li>{{#link-to 'p5'}}Hedges & Indicators {{/link-to}}</li> 
+      <li>{{#link-to 'p6'}}Dogs Dow {{/link-to}}</li>
+      <li>{{#link-to 'p7'}}Current Holdings{{/link-to}}</li>
       </ul>
       </div>
    </div>
@@ -464,21 +481,22 @@
   <div class="navbar-inner">
     <a class="brand" href="#">Home</a>
     <ul class="nav">
-      <li>{{#link-to 'rrd'}}RRD{{/link-to}}</li>
-      <li>{{#link-to 'sa'}}curzio{{/link-to}}</li>
+      <li>{{#link-to 'rrd'}}Priors{{/link-to}}</li>
+      <li>{{#link-to 'sa'}}NL1{{/link-to}}</li>
       <li>{{#link-to 'p1'}}SIA{{/link-to}}</li>
-      <li>{{#link-to 'p2'}}indicators{{/link-to}}</li>
-      <li>{{#link-to 'p3'}}like now{{/link-to}}</li>
-      <li>{{#link-to 'p4'}}RM{{/link-to}}</li>
-      <li>{{#link-to 'p5'}}HDG{{/link-to}}</li>
-      <li>{{#link-to 'p6'}}Dogs{{/link-to}}</li>
-      <li>{{#link-to 'p7'}}ActivePortfolio{{/link-to}}</li>
+      <li>{{#link-to 'p2'}}AREA 57{{/link-to}}</li>
+      <li>{{#link-to 'p3'}}On-Deck{{/link-to}}</li>
+      <li>{{#link-to 'p4'}}Resource{{/link-to}}</li>
+      <li>{{#link-to 'p5'}}Hedges & Indicators {{/link-to}}</li>
+      <li>{{#link-to 'p6'}}Dogs Dow {{/link-to}}</li>
+      <li>{{#link-to 'p7'}}Current Holdings{{/link-to}}</li>
       </ul>
       </div>
        <ul>
     {{#each item in model}}
       <li>
-      <a href="http://www.gurufocus.com//stock.php?symbol={{item}}" target="_blank"/>{{item}} -- GF Fundamentals</a>  
+      <b>{{item}} : </b> <a href="http://www.gurufocus.com//stock.php?symbol={{item}}" target="_blank"/> Fundamentals </a><b> : </b>  
+<b> : </b> 				<a href="http://seekingalpha.com/symbol/{{item}}" target="_blank"/>Analysis</a>  
       <!-- <a href="https://finance.yahoo.com/q?s={item}}"/> Yahoo </a> -->
           <br><table><tr><td>
             <img src="http://stockcharts.com/c-sc/sc?s={{item}}&p=D&b=5&g=0&i=p64176622437&r=1457665058631"/>
@@ -495,15 +513,15 @@
   <div class="navbar-inner">
     <a class="brand" href="#">Home</a>
     <ul class="nav">
-      <li>{{#link-to 'rrd'}}RRD{{/link-to}}</li>
-      <li>{{#link-to 'sa'}}curzio{{/link-to}}</li>
+      <li>{{#link-to 'rrd'}}Priors{{/link-to}}</li>
+      <li>{{#link-to 'sa'}}NL1{{/link-to}}</li>
       <li>{{#link-to 'p1'}}SIA{{/link-to}}</li>
-      <li>{{#link-to 'p2'}}indicators{{/link-to}}</li>
-      <li>{{#link-to 'p3'}}like now{{/link-to}}</li>
-      <li>{{#link-to 'p4'}}RM{{/link-to}}</li>
-      <li>{{#link-to 'p5'}}HDG{{/link-to}}</li> 
-      <li>{{#link-to 'p6'}}Dogs{{/link-to}}</li>
-      <li>{{#link-to 'p7'}}ActivePortfolio{{/link-to}}</li>
+      <li>{{#link-to 'p2'}}AREA 57{{/link-to}}</li>
+      <li>{{#link-to 'p3'}}On-Deck{{/link-to}}</li>
+      <li>{{#link-to 'p4'}}Resource{{/link-to}}</li>
+      <li>{{#link-to 'p5'}}Hedges & Indicators {{/link-to}}</li> 
+      <li>{{#link-to 'p6'}}Dogs Dow {{/link-to}}</li>
+      <li>{{#link-to 'p7'}}Current Holdings{{/link-to}}</li>
       </ul>
       </div>
    </div>
@@ -512,8 +530,8 @@
   <script src="js/libs/jquery-1.10.2.js"></script>
   <script src="js/libs/handlebars-1.1.2.js"></script>
   <script src="js/libs/ember-1.6.1.js"></script>
-  <script src="http://cdnjs.cloudflare.com/ajax/libs/showdown/0.3.1/showdown.min.js"></script>
-  <script src="http://cdnjs.cloudflare.com/ajax/libs/moment.js/2.7.0/moment.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/0.3.1/showdown.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.7.0/moment.min.js"></script>
   <script src="js/app.js"></script>
 
   <!-- to activate the test runner, add the "?test" query string parameter -->
