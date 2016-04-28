@@ -29,23 +29,23 @@
       </div>
    </div>
    
-        <ul class="nav">
+       <ul>
     {{#each item in model}}
       <li>
-        <b>{{item}} : </b> 
-				<a href="http://www.gurufocus.com//stock.php?symbol={{item}}" target="_blank"/> Fundamentals </a><b> : </b>
-				<a href="http://www.gurufocus.com/dividend/{{item}}" target="_blank"/>Dividend</a>
-				<b> : </b><a href="http://seekingalpha.com/symbol/{{item}}" target="_blank"/>Analysis</a>  
-
-        <!-- <a href="https://finance.yahoo.com/q?s={item}}"/> Yahoo </a> -->
-          <br><table><tr><td>
-            <img src="http://stockcharts.com/c-sc/sc?s={{item}}&p=D&b=5&g=0&i=p64176622437&r=1457665058631"/>
-            </td><td>
-            <img src="http://stockcharts.com/c-sc/sc?s={{item}}&p=W&b=5&g=0&i=t99261714081&r=1408323404116"/>
-            </td></tr></table>
-          <br>
-
+        <b>{{item}} : </b>
+          <a href="http://www.gurufocus.com//stock.php?symbol={{item}}" target="_blank"/> Fundamentals </a>
+        <b> : </b>
+          <a href="http://finviz.com/quote.ashx?t={{item}}" target="_blank"/> FinViz </a>
+        <b> : </b> 
+          <a href="http://seekingalpha.com/symbol/{{item}}" target="_blank"/>Analysis</a>  
+        <br><table><tr><td>
+             <img src="http://stockcharts.com/c-sc/sc?s={{item}}&p=D&b=5&g=0&i=p64176622437&r=1457665058631"/>
+          </td><td>
+              <img src="http://stockcharts.com/c-sc/sc?s={{item}}&p=W&b=5&g=0&i=t99261714081&r=1408323404116"/>
+          </td></tr></table>
+        <br>
       </li>
+
     {{/each}}
     </ul>
    {{outlet}}
@@ -86,17 +86,18 @@
        <ul>
     {{#each item in model}}
       <li>
-      <b>{{item}} : </b> <a href="http://www.gurufocus.com//stock.php?symbol={{item}}" target="_blank"/> Fundamentals</a><b> : </b>  
-      <a href="http://www.gurufocus.com/divdend/{{item}}" target="_blank"/>Dividend</a>  
-			
-      <!-- <a href="https://finance.yahoo.com/q?s={item}}"/> Yahoo </a> -->
-          <br><table><tr><td>
-            <img src="http://stockcharts.com/c-sc/sc?s={{item}}&p=D&b=5&g=0&i=p64176622437&r=1457665058631"/>
-            </td><td>
-            <img src="http://stockcharts.com/c-sc/sc?s={{item}}&p=W&b=5&g=0&i=t99261714081&r=1408323404116"/>
-            </td></tr></table>
-          <br>
-
+        <b>{{item}} : </b>
+          <a href="http://www.gurufocus.com//stock.php?symbol={{item}}" target="_blank"/> Fundamentals </a>
+        <b> : </b>
+          <a href="http://finviz.com/quote.ashx?t={{item}}" target="_blank"/> FinViz </a>
+        <b> : </b> 
+          <a href="http://seekingalpha.com/symbol/{{item}}" target="_blank"/>Analysis</a>  
+        <br><table><tr><td>
+             <img src="http://stockcharts.com/c-sc/sc?s={{item}}&p=D&b=5&g=0&i=p64176622437&r=1457665058631"/>
+          </td><td>
+              <img src="http://stockcharts.com/c-sc/sc?s={{item}}&p=W&b=5&g=0&i=t99261714081&r=1408323404116"/>
+          </td></tr></table>
+        <br>
       </li>
     {{/each}}
     </ul>
@@ -138,19 +139,18 @@
        <ul>
     {{#each item in model}}
       <li>
-      <b>{{item}} : </b> <a href="http://www.gurufocus.com//stock.php?symbol={{item}}" target="_blank"/> Fundamentals </a>
-			<b> : </b> 
-			<a href="http://www.gurufocus.com/dividend/{{item}}" target="_blank"/>Dividend</a>
-      <b> : </b> 				
-			<a href="http://seekingalpha.com/symbol/{{item}}<a href="http://seekingalpha.com/symbol/{{item}}" target="_blank"/>Analysis</a>
-      <!-- <a href="https://finance.yahoo.com/q?s={item}}"/> Yahoo </a> -->
-          <br><table><tr><td>
-            <img src="http://stockcharts.com/c-sc/sc?s={{item}}&p=D&b=5&g=0&i=p64176622437&r=1457665058631"/>
-            </td><td>
-            <img src="http://stockcharts.com/c-sc/sc?s={{item}}&p=W&b=5&g=0&i=t99261714081&r=1408323404116"/>
-            </td></tr></table>
-          <br>
-
+        <b>{{item}} : </b>
+          <a href="http://www.gurufocus.com//stock.php?symbol={{item}}" target="_blank"/> Fundamentals </a>
+        <b> : </b>
+          <a href="http://finviz.com/quote.ashx?t={{item}}" target="_blank"/> FinViz </a>
+        <b> : </b> 
+          <a href="http://seekingalpha.com/symbol/{{item}}" target="_blank"/>Analysis</a>  
+        <br><table><tr><td>
+             <img src="http://stockcharts.com/c-sc/sc?s={{item}}&p=D&b=5&g=0&i=p64176622437&r=1457665058631"/>
+          </td><td>
+              <img src="http://stockcharts.com/c-sc/sc?s={{item}}&p=W&b=5&g=0&i=t99261714081&r=1408323404116"/>
+          </td></tr></table>
+        <br>
       </li>
     {{/each}}
     </ul>
@@ -192,16 +192,18 @@
        <ul>
     {{#each item in model}}
       <li>
-      <b>{{item}} : </b> <a href="http://www.gurufocus.com//stock.php?symbol={{item}}" target="_blank"/> Fundamentals </a><b> : </b>  
-<b> : </b> 				<a href="http://seekingalpha.com/symbol/{{item}}" target="_blank"/>Analysis</a>  
-      <!-- <a href="https://finance.yahoo.com/q?s={item}}"/> Yahoo </a> -->
-          <br><table><tr><td>
-            <img src="http://stockcharts.com/c-sc/sc?s={{item}}&p=D&b=5&g=0&i=p64176622437&r=1457665058631"/>
-            </td><td>
-            <img src="http://stockcharts.com/c-sc/sc?s={{item}}&p=W&b=5&g=0&i=t99261714081&r=1408323404116"/>
-            </td></tr></table>
-          <br>
-
+        <b>{{item}} : </b>
+          <a href="http://www.gurufocus.com//stock.php?symbol={{item}}" target="_blank"/> Fundamentals </a>
+        <b> : </b>
+          <a href="http://finviz.com/quote.ashx?t={{item}}" target="_blank"/> FinViz </a>
+        <b> : </b> 
+          <a href="http://seekingalpha.com/symbol/{{item}}" target="_blank"/>Analysis</a>  
+        <br><table><tr><td>
+             <img src="http://stockcharts.com/c-sc/sc?s={{item}}&p=D&b=5&g=0&i=p64176622437&r=1457665058631"/>
+          </td><td>
+              <img src="http://stockcharts.com/c-sc/sc?s={{item}}&p=W&b=5&g=0&i=t99261714081&r=1408323404116"/>
+          </td></tr></table>
+        <br>
       </li>
     {{/each}}
     </ul>
@@ -243,15 +245,18 @@
        <ul>
     {{#each item in model}}
       <li>
-      <b>{{item}} : </b> <a href="http://www.gurufocus.com//stock.php?symbol={{item}}" target="_blank"/> Fundamentals </a><b> : </b>  
-<b> : </b> 				<a href="http://seekingalpha.com/symbol/{{item}}" target="_blank"/>Analysis</a>  
-          <br><table><tr><td>
-            <img src="http://stockcharts.com/c-sc/sc?s={{item}}&p=D&b=5&g=0&i=p64176622437&r=1457665058631"/>
-            </td><td>
-            <img src="http://stockcharts.com/c-sc/sc?s={{item}}&p=W&b=5&g=0&i=t99261714081&r=1408323404116"/>
-            </td></tr></table>
-          <br>
-
+        <b>{{item}} : </b>
+          <a href="http://www.gurufocus.com//stock.php?symbol={{item}}" target="_blank"/> Fundamentals </a>
+        <b> : </b>
+          <a href="http://finviz.com/quote.ashx?t={{item}}" target="_blank"/> FinViz </a>
+        <b> : </b> 
+          <a href="http://seekingalpha.com/symbol/{{item}}" target="_blank"/>Analysis</a>  
+        <br><table><tr><td>
+             <img src="http://stockcharts.com/c-sc/sc?s={{item}}&p=D&b=5&g=0&i=p64176622437&r=1457665058631"/>
+          </td><td>
+              <img src="http://stockcharts.com/c-sc/sc?s={{item}}&p=W&b=5&g=0&i=t99261714081&r=1408323404116"/>
+          </td></tr></table>
+        <br>
       </li>
     {{/each}}
     </ul>
@@ -293,16 +298,18 @@
        <ul>
     {{#each item in model}}
       <li>
-      <b>{{item}} : </b> <a href="http://www.gurufocus.com//stock.php?symbol={{item}}" target="_blank"/> Fundamentals </a>
-      <b> : </b><b> : </b> <a href="http://seekingalpha.com/symbol/{{item}}" target="_blank"/>Analysis</a>  
-      <!-- <a href="https://finance.yahoo.com/q?s={item}}"/> Yahoo </a> -->
-          <br><table><tr><td>
-            <img src="http://stockcharts.com/c-sc/sc?s={{item}}&p=D&b=5&g=0&i=p64176622437&r=1457665058631"/>
-            </td><td>
-            <img src="http://stockcharts.com/c-sc/sc?s={{item}}&p=W&b=5&g=0&i=t99261714081&r=1408323404116"/>
-            </td></tr></table>
-          <br>
-
+        <b>{{item}} : </b>
+          <a href="http://www.gurufocus.com//stock.php?symbol={{item}}" target="_blank"/> Fundamentals </a>
+        <b> : </b>
+          <a href="http://finviz.com/quote.ashx?t={{item}}" target="_blank"/> FinViz </a>
+        <b> : </b> 
+          <a href="http://seekingalpha.com/symbol/{{item}}" target="_blank"/>Analysis</a>  
+        <br><table><tr><td>
+             <img src="http://stockcharts.com/c-sc/sc?s={{item}}&p=D&b=5&g=0&i=p64176622437&r=1457665058631"/>
+          </td><td>
+              <img src="http://stockcharts.com/c-sc/sc?s={{item}}&p=W&b=5&g=0&i=t99261714081&r=1408323404116"/>
+          </td></tr></table>
+        <br>
       </li>
     {{/each}}
     </ul>
@@ -344,16 +351,18 @@
        <ul>
     {{#each item in model}}
       <li>
-      <b>{{item}} : </b> <a href="http://www.gurufocus.com//stock.php?symbol={{item}}" target="_blank"/> Fundamentals </a><b> : </b>  
-<b> : </b> 				<a href="http://seekingalpha.com/symbol/{{item}}" target="_blank"/>Analysis</a>  
-      <!-- <a href="https://finance.yahoo.com/q?s={item}}"/> Yahoo </a> -->
-          <br><table><tr><td>
-            <img src="http://stockcharts.com/c-sc/sc?s={{item}}&p=D&b=5&g=0&i=p64176622437&r=1457665058631"/>
-            </td><td>
-            <img src="http://stockcharts.com/c-sc/sc?s={{item}}&p=W&b=5&g=0&i=t99261714081&r=1408323404116"/>
-            </td></tr></table>
-          <br>
-
+        <b>{{item}} : </b>
+          <a href="http://www.gurufocus.com//stock.php?symbol={{item}}" target="_blank"/> Fundamentals </a>
+        <b> : </b>
+          <a href="http://finviz.com/quote.ashx?t={{item}}" target="_blank"/> FinViz </a>
+        <b> : </b> 
+          <a href="http://seekingalpha.com/symbol/{{item}}" target="_blank"/>Analysis</a>  
+        <br><table><tr><td>
+             <img src="http://stockcharts.com/c-sc/sc?s={{item}}&p=D&b=5&g=0&i=p64176622437&r=1457665058631"/>
+          </td><td>
+              <img src="http://stockcharts.com/c-sc/sc?s={{item}}&p=W&b=5&g=0&i=t99261714081&r=1408323404116"/>
+          </td></tr></table>
+        <br>
       </li>
     {{/each}}
     </ul>
@@ -395,16 +404,18 @@
        <ul>
     {{#each item in model}}
       <li>
-      <b>{{item.ticker}} : </b> <a href="http://www.gurufocus.com//stock.php?symbol={{item.ticker}}" target="_blank"/> Fundamentals </a><b> : </b>  
-      <a href="http://www.gurufocus.com/dividend/{{item.ticker}}" target="_blank"/>Dividend-{{item.ticker}}</a>  
-      <!-- <a href="https://finance.yahoo.com/q?s={item.ticker}}"/> Yahoo </a> -->
-          <br><table><tr><td>
-            <img src="http://stockcharts.com/c-sc/sc?s={{item.ticker}}&p=D&b=5&g=0&i=p64176622437&r=1457665058631"/>
-            </td><td>
-            <img src="http://stockcharts.com/c-sc/sc?s={{item.ticker}}&p=W&b=5&g=0&i=t99261714081&r=1408323404116"/>
-            </td></tr></table>
-          <br>
-
+        <b>{{item}} : </b>
+          <a href="http://www.gurufocus.com//stock.php?symbol={{item}}" target="_blank"/> Fundamentals </a>
+        <b> : </b>
+          <a href="http://finviz.com/quote.ashx?t={{item}}" target="_blank"/> FinViz </a>
+        <b> : </b> 
+          <a href="http://seekingalpha.com/symbol/{{item}}" target="_blank"/>Analysis</a>  
+        <br><table><tr><td>
+             <img src="http://stockcharts.com/c-sc/sc?s={{item}}&p=D&b=5&g=0&i=p64176622437&r=1457665058631"/>
+          </td><td>
+              <img src="http://stockcharts.com/c-sc/sc?s={{item}}&p=W&b=5&g=0&i=t99261714081&r=1408323404116"/>
+          </td></tr></table>
+        <br>
       </li>
     {{/each}}
     </ul>
@@ -445,16 +456,18 @@
        <ul>
     {{#each item in model}}
       <li>
-      <b>{{item}} : </b> <a href="http://www.gurufocus.com//stock.php?symbol={{item}}" target="_blank"/> Fundamentals </a><b> : </b>  
-<b> : </b> 				<a href="http://seekingalpha.com/symbol/{{item}}" target="_blank"/>Analysis</a>  
-      <!-- <a href="https://finance.yahoo.com/q?s={item}}"/> Yahoo </a> -->
-          <br><table><tr><td>
-            <img src="http://stockcharts.com/c-sc/sc?s={{item}}&p=D&b=5&g=0&i=p64176622437&r=1457665058631"/>
-            </td><td>
-            <img src="http://stockcharts.com/c-sc/sc?s={{item}}&p=W&b=5&g=0&i=t99261714081&r=1408323404116"/>
-            </td></tr></table>
-          <br>
-
+        <b>{{item}} : </b>
+          <a href="http://www.gurufocus.com//stock.php?symbol={{item}}" target="_blank"/> Fundamentals </a>
+        <b> : </b>
+          <a href="http://finviz.com/quote.ashx?t={{item}}" target="_blank"/> FinViz </a>
+        <b> : </b> 
+          <a href="http://seekingalpha.com/symbol/{{item}}" target="_blank"/>Analysis</a>  
+        <br><table><tr><td>
+             <img src="http://stockcharts.com/c-sc/sc?s={{item}}&p=D&b=5&g=0&i=p64176622437&r=1457665058631"/>
+          </td><td>
+              <img src="http://stockcharts.com/c-sc/sc?s={{item}}&p=W&b=5&g=0&i=t99261714081&r=1408323404116"/>
+          </td></tr></table>
+        <br>
       </li>
     {{/each}}
     </ul>
@@ -495,16 +508,18 @@
        <ul>
     {{#each item in model}}
       <li>
-      <b>{{item}} : </b> <a href="http://www.gurufocus.com//stock.php?symbol={{item}}" target="_blank"/> Fundamentals </a><b> : </b>  
-<b> : </b> 				<a href="http://seekingalpha.com/symbol/{{item}}" target="_blank"/>Analysis</a>  
-      <!-- <a href="https://finance.yahoo.com/q?s={item}}"/> Yahoo </a> -->
-          <br><table><tr><td>
-            <img src="http://stockcharts.com/c-sc/sc?s={{item}}&p=D&b=5&g=0&i=p64176622437&r=1457665058631"/>
-            </td><td>
-            <img src="http://stockcharts.com/c-sc/sc?s={{item}}&p=W&b=5&g=0&i=t99261714081&r=1408323404116"/>
-            </td></tr></table>
-          <br>
-
+        <b>{{item}} : </b>
+          <a href="http://www.gurufocus.com//stock.php?symbol={{item}}" target="_blank"/> Fundamentals </a>
+        <b> : </b>
+          <a href="http://finviz.com/quote.ashx?t={{item}}" target="_blank"/> FinViz </a>
+        <b> : </b> 
+          <a href="http://seekingalpha.com/symbol/{{item}}" target="_blank"/>Analysis</a>  
+        <br><table><tr><td>
+             <img src="http://stockcharts.com/c-sc/sc?s={{item}}&p=D&b=5&g=0&i=p64176622437&r=1457665058631"/>
+          </td><td>
+              <img src="http://stockcharts.com/c-sc/sc?s={{item}}&p=W&b=5&g=0&i=t99261714081&r=1408323404116"/>
+          </td></tr></table>
+        <br>
       </li>
     {{/each}}
     </ul>
