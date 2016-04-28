@@ -15,7 +15,7 @@ App.Router.map(function() {
 // --------- ******** PORTFOLIO PAST & PRESENT ************
 App.RrdRoute = Ember.Route.extend ({
 	model: function() {
-		return ['$BRENT','$USD','$GOLD','AAPL','TGT','WMT','AUY','BX','CCJ','CHL','CME','COH','DE','DSUM','ESV','EOG','EVT','FB','FYLD','KERX','MUX','LVMUY','NUV','NOV','NEWT','MSFT','PEP','GMOM','GULTU','HTBX','TGT','LRE.L','VZ','MGNX','WEC','XLU','PLG','SCPZF','SHLD','STZ','SYY','SDRL','T','TGT','TJX','TNH','SLW','UVV','VAR','VNR','WPRT','WRB','YHOO'];
+		return ['$BRENT','$USD','$GOLD','AAPL','TGT','WMT','AUY','BX','CCJ','CHL','CME','COH','DE','DSUM','ESV','EOG','EVT','FB','FYLD','GILD','KERX','MUX','LVMUY','NUV','NOV','NEWT','MSFT','PEP','GMOM','GULTU','HTBX','TGT','LRE.L','VZ','MGNX','WEC','XLU','PLG','SCPZF','SHLD','STZ','SYY','SDRL','T','TGT','TJX','TNH','SLW','UVV','VAR','VNR','WPRT','WRB','YHOO'];
 	}
 });
 // --------- ******** CURZIO ************
@@ -57,7 +57,7 @@ App.P2Route = Ember.Route.extend ({
 // --------- ******** LIKE NOW ************  
 App.P3Route = Ember.Route.extend ({
 	model: function() {
-		return ['AVP','EPR','BX','TAP','IBM','BUD','COR','ECA','GOLR','DOW','RPM','KMI','SLB','JPM','CCI','FIZZ','PSA','GSK','SFDC','ORCL','MSFT','VGR','JNJ','CALM','T','BA','PBH','XOM','NAT','GEO','RAI','AINV','ARCC','PM','MAIN','WMB','HCN','MO','GD','DUK','OAK','EWS','PICK','WY','FXI','QCOM','TNH','SBIO','GDXJ','FEMS','OXY','GILD','WEC','SUI','AMZN','GOOG','CVX','STLD','CAT','PFE','SWKS','MRVL','CRAY','KKR'];
+		return ['AVP','EPR','BX','TAP','IBM','BUD','COR','ECA','GOLR','DOW','RPM','KMI','SLB','JPM','CCI','FIZZ','PSA','GSK','GILD','SFDC','ORCL','MSFT','VGR','JNJ','CALM','T','BA','PBH','XOM','NAT','GEO','RAI','AINV','ARCC','PM','MAIN','WMB','HCN','MO','GD','DUK','OAK','EWS','PICK','WY','FXI','QCOM','TNH','SBIO','GDXJ','FEMS','OXY','GILD','WEC','SUI','AMZN','GOOG','CVX','STLD','CAT','PFE','SWKS','MRVL','CRAY','KKR'];
 	}
 });
 // --------- ******** Resources Sector Picks ************
@@ -82,7 +82,7 @@ App.P6Route = Ember.Route.extend ({
 // --------- ******** Active Portoflio ************
 App.P7Route = Ember.Route.extend ({
 	model: function() {
-		return ['AA-B','ALS.TO','AFL','ABBV','BRI.V','BAX','BXE','BXLT','BX','AMZN','ARI','AXS','BMY','CSCO','CAT','CALM','DEO','DIS','EWS','ELNK','FB','GE','GILD','GOOG','IPHYF','KKR','MFA','NGPHF','NAT','NKE','NUV','PEP','RPM','SBIO','SHOP','TNH','UA','VZ','WEC','XLU'];
+		return ['AA-B','ALS.TO','AFL','ABBV','BRI.V','BAX','BXE','BXLT','BX','AMZN','ARI','AXS','BMY','CSCO','CAT','CALM','DEO','DIS','EWS','ELNK','FB','GE','GOOG','IPHYF','KKR','MFA','NGPHF','NAT','NKE','NUV','PEP','RPM','SBIO','SHOP','TNH','UA','VZ','WEC','XLU'];
 	}
 });
 App.IndexRoute = Ember.Route.extend({
