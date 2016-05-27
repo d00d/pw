@@ -10,18 +10,19 @@ App.Router.map(function() {
   this.resource('p5');
   this.resource('p6');
   this.resource('p7');
+  this.resource('p8');
 });
 
 // --------- ******** PORTFOLIO PAST & PRESENT ************
 App.RrdRoute = Ember.Route.extend ({
 	model: function() {
-		return ['$BRENT','$USD','$GOLD','AAPL','TGT','WMT','AUY','BX','CCJ','CHL','CME','COH','DE','DSUM','ESV','EOG','EVT','FB','FYLD','GILD','KERX','MUX','LVMUY','NUV','NOV','NEWT','MSFT','PEP','GMOM','GULTU','HTBX','TGT','LRE.L','VZ','MGNX','WEC','XLU','PLG','SCPZF','SHLD','STZ','SYY','SDRL','T','TGT','TJX','TNH','SLW','UVV','VAR','VNR','WPRT','WRB','YHOO'];
+		return ['$BRENT','$USD','$GOLD','AAPL','TGT','GOGO','DGI','ARIA','NUAN','SWKS','MRVL','ALS.TO','CRAY','SWKS','SAND','WMT','AUY','BX','CCJ','CHL','CME','COH','DE','DSUM','ESV','EOG','EVT','FYLD','GILD','KERX','MUX','LVMUY','NOV','NEWT','MSFT','PEP','GMOM','GULTU','HTBX','TGT','MGNX','PLG','SCPZF','SHLD','STZ','SYY','SBUX','SDRL','SBIO','SHOP','TGT','TJX','VAR','WPRT','RPM','WRB'];
 	}
 });
-// --------- ******** CURZIO ************
+// --------- ******** Grip ************
 App.SaRoute = Ember.Route.extend ({
 	model: function() {
-		return ['RNWK','GWPH','LNN','GOGO','DGI','ARIA',,'SWKS','SAND','WPRT','DBD','RPM','BMS','UVV','LEG','LPI','TGP','MDR','TIBX','NUAN','SWKS','MRVL','ALS.TO','CRAY','CRESY','CSCO','SPN','KKR','STLD'];
+		return ['EPR','NLY','O','KKR','DBD','BX','BMS','UVV','LEG','TGP','NAT','MDR','TIBX','CRESY','CSCO','SPN','KKR','STLD','UVV','NUV','LRE.L','VZ','TNH','T','WEC','XLU'];
 	}
 });
 // --------- ******** SIA ************
@@ -57,7 +58,7 @@ App.P2Route = Ember.Route.extend ({
 // --------- ******** LIKE NOW ************  
 App.P3Route = Ember.Route.extend ({
 	model: function() {
-		return ['AVP','EPR','BX','TAP','IBM','BUD','COR','ECA','GOLR','DOW','RPM','KMI','SLB','JPM','CCI','FIZZ','PSA','GSK','GILD','SFDC','ORCL','MSFT','VGR','JNJ','CALM','T','BA','PBH','XOM','NAT','GEO','RAI','AINV','ARCC','PM','MAIN','WMB','HCN','MO','GD','DUK','OAK','EWS','PICK','WY','FXI','QCOM','TNH','SBIO','GDXJ','FEMS','OXY','GILD','WEC','SUI','AMZN','GOOG','CVX','STLD','CAT','PFE','SWKS','MRVL','CRAY','KKR'];
+		return ['SWKS','MA','V','BEN','GILD','OIBR','OHI','ABT','NAT','ADM','CLCT','SWKS','GLOP','TUP','PM','NLY','GSK','FMC','COR','DLR','GNW','CAT','DBD','AVP','ABC','AAPL','BX','TAP','CB','MRVL','BUD','COR','GLOP','ECA','GOLR','DOW','DBD','SCPZF','SLB','HD','JPM','CCI','FIZZ','PSA','GSK','SFDC','SBUX','ORCL','MSFT','MCD','NLY','VGR','JNJ','CALM','T','BA','PBH','NAT','GEO','RAI','AINV','ARCC','PM','MAIN','WMB','HCN','MO','GD','STZ','OAK','EWS','PICK','WY','FXI','QCOM','WPRT','SBIO','GDXJ','FEMS','OXY','GILD','THS','CVX','STLD','PFE','MRVL','CRAY'];
 	}
 });
 // --------- ******** Resources Sector Picks ************
@@ -76,13 +77,18 @@ App.P5Route = Ember.Route.extend ({
 // --------- ******** DOGS of the Dow ************
 App.P6Route = Ember.Route.extend ({
 	model: function() {
-		return ['CVX','VZ','CAT','WMT','CSCO','PFE','IBM','XOM','BA','MRK','INTC'];
+		return ['AAPL','CVX','VZ','CAT','WMT','CSCO','PFE','IBM','XOM','BA','MRK','INTC'];
 	}
 });
 // --------- ******** Active Portoflio ************
 App.P7Route = Ember.Route.extend ({
 	model: function() {
-		return ['AA-B','ALS.TO','AFL','ABBV','BRI.V','BAX','BXE','BXLT','BX','AMZN','ARI','AXS','BMY','CSCO','CAT','CALM','DEO','DIS','EWS','ELNK','FB','GE','GOOG','IPHYF','KKR','MFA','NGPHF','NAT','NKE','NUV','PEP','RPM','SBIO','SHOP','TNH','UA','VZ','WEC','XLU'];
+		return ['$VIX','$BRENT','$USD','$GOLD','USCI','AA-B','AAPL','AXL','ALS.TO','AFL','ABBV','AMZN','BRI.V','BMO','BAX','BXE','BXLT','BX','ARI','AXS','BMY','CSCO','DBD','USCI','CALM','DEO','DBD','DIS','EWS','ELNK','FB','FUN','GE','GOOG','SCPZF','IPHYF','KKR','MFA','NGPHF','NAT','NUV','PEP','SLW','TNH','UA','VZ','VNM','WEC','XLU'];
+	}
+});
+App.P8Route = Ember.Route.extend ({
+	model: function() {
+		return ['ADM','CLCT','GLOP','FUN','TUP','PM','MO','EXPD','TIC','NYMT','PMT','PSEC','NLY','MFA','HTS','GAIN','BX','HCN','OHI','SNH','GSK','EGAS','COR-A','COR','DLR-E','DLR','GRMN'];
 	}
 });
 App.IndexRoute = Ember.Route.extend({
