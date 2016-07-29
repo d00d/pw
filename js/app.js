@@ -16,7 +16,7 @@ App.Router.map(function() {
 // --------- ******** Grip ************
 App.SaRoute = Ember.Route.extend ({
 	model: function() {
-		return ['EPR','NLY','O','KKR','DBD','BX','BMS','UVV','LEG','TGP','NAT','MDR','TIBX','CRESY','CSCO','SPN','KKR','STLD','UVV','NUV','LRE.L','VZ','TNH','T','WEC','XLU'];
+		return ['SWK','SHW','PPG','VFC','PNR','NUE','BF-B','HRL','MHFI','GPC','MKC','BEN','TGT','CLX','MCD','SYY','CAH','AFL','CB','CINF','GWW','ADM','SIAL','ED','BCR','BDX','MDT','PG','EMR','ABT','XOM','LEG','CVX','HCP','LOW','ITW','CTAS','ECL','KMB','APD','CL','WBA','ADP','TROW','DOV','PEP','ABBV','MMM','KO','JNJ','T','WMT'];
 	}
 });
 // --------- ******** SIA ************
@@ -52,7 +52,7 @@ App.P2Route = Ember.Route.extend ({
 // --------- ******** LIKE NOW ************  
 App.P3Route = Ember.Route.extend ({
 	model: function() {
-		return ['SWKS','MA','V','GREK','DVIGX','GILD','OIBR','OHI','NG','ABT','NAT','ADM','CLCT','SWKS','GLOP','TUP','KERX','PM','NLY','GSK','FMC','COR','DLR','GNW','CAT','DBD','AVP','ABC','AAPL','BX','TAP','CB','MRVL','BUD','COR','GLOP','ECA','GOLR','DOW','DBD','SCPZF','SLB','HD','JPM','CCI','FIZZ','PSA','GSK','SFDC','SBUX','ORCL','MSFT','MCD','NLY','VGR','JNJ','CALM','T','BA','PBH','NAT','GEO','RAI','AINV','ARCC','PM','MAIN','WMB','HCN','MO','GD','STZ','OAK','EWS','PICK','WY','FXI','QCOM','WPRT','SBIO','GDXJ','FEMS','OXY','GILD','THS','CVX','STLD','PFE','MRVL','CRAY'];
+		return ['ACIA','SWKS','MA','V','DVIGX','GILD','OIBR','ibb','NG','UNP','ABT','NAT','ADM','CLCT','SWKS','GLOP','TUP','KERX','PM','NLY','GSK','FMC','COR','DLR','GNW','CAT','DBD','AVP','ABC','AAPL','BX','TAP','CB','MRVL','BUD','COR','GLOP','ECA','GOLR','DOW','DBD','SCPZF','SLB','HD','JPM','CCI','FIZZ','PSA','GSK','SFDC','SBUX','ORCL','MSFT','MCD','NLY','VGR','JNJ','CALM','T','BA','PBH','NAT','GEO','RAI','AINV','ARCC','PM','MAIN','WMB','HCN','MO','GD','STZ','OAK','EWS','PICK','WY','FXI','QCOM','WPRT','SBIO','GDXJ','FEMS','OXY','GILD','THS','CVX','STLD','PFE','MRVL','CRAY'];
 	}
 });
 // --------- ******** Resources Sector Picks ************
@@ -71,29 +71,28 @@ App.P5Route = Ember.Route.extend ({
 // --------- ******** DOGS of the Dow ************
 App.P6Route = Ember.Route.extend ({
 	model: function() {
-		return ['AAPL','CVX','VZ','CAT','WMT','CSCO','PFE','IBM','XOM','BA','MRK','INTC'];
+		return ['AAPL','CVX','VZ','CAT','WMT','CSCO','PFE','IBM','XOM','BA','MRK','INTC','CLX','MO',];
 	}
 });
-// --------- ******** PRIORS ************
+// --------- ******** PORTFOLIO PAST & PRESENT AKA THE BENCH ************
 App.RrdRoute = Ember.Route.extend ({
 	model: function() {
-		return ['AXL','AXS','AAPL','BX','BAX','BXLT','BMO','ARI','NAT','USCI','CALM','DEO','UA','TGT','GOGO','DGI','ARIA','KKR','NUAN','SWKS','MRVL','ALS.TO','CRAY','SWKS','SAND','WMT','AUY','BX','CCJ','CHL','CME','COH','DE','DSUM','ESV','EOG','EVT','FYLD','GILD','KERX','MUX','LVMUY','NOV','NEWT','MSFT','PEP','GMOM','GULTU','HTBX','TGT','MGNX','PLG','SCPZF','SHLD','STZ','SYY','SBUX','SDRL','SBIO','SHOP','TGT','TJX','VAR','WPRT','RPM','WRB'];
+		return ['$BRENT','$USD','$GOLD','AAPL','AXL','AXS','AFL','ARI','USCI','BRI.V','BMO','BXE','BAX','BXLT','DGI','DEO','ARIA','CALM','NUAN','MRVL','NAT','ALS.TO','CRAY','PEP','MFA','SAND','WMT','AUY','BX','CCJ','CHL','CME','COH','DE','DSUM','ESV','EOG','EVT','FYLD','GILD','KERX','MUX','LVMUY','NOV','NEWT','MSFT','PEP','GMOM','GULTU','HTBX','TGT','MGNX','PLG','SCPZF','SHLD','STZ','SYY','SBUX','SDRL','SBIO','SHOP','TGT','TJX','UA','VAR','WPRT','RPM','WRB'];
 	}
 });
-// --------- ******** Active Portoflio Investments ************
+// --------- ******** Active Portoflio Holds ************
 App.P7Route = Ember.Route.extend ({
 	model: function() {
-		return ['$VIX','$BRENT','$USD','$GOLD','AA-B','AAPL','ABBV','AMZN','BMY','CSCO','DBD','DIS','FB','FUN','GE','GOOG','NUV','PEP','VZ','T','V','WEC','XLU'];
+		return ['$VIX','$BRENT','$USD','$GOLD','AA-B','ABC','AAPL','ACIA','ALS.TO','ABBV','AMZN','BMY','BX','BXE','CLCT','CSCO','DBD','DIS','EGAS','EWS','ELNK','FB','FUN','GE','GLOP','GOOG','HRL','IPHYF','MAA','MFA','KKR','NLY','MO','NGPHF','NAT','NUV','OHI','PSTG','SCPZF','STZ','TEVA','TGT','TUP','VNQ','VZ','SLW','VNM','XLU','WEC'];
 	}
 });
-// --------- ******** Active Portoflio Trades ************
 App.P8Route = Ember.Route.extend ({
 	model: function() {
-		return ['$VIX','$BRENT','$USD','$GOLD','ALS.TO','ABC','BXE','BRI.V','ELNK','EWS','SCPZF','NGPHF','IPHYF','PICK','MFA','NGPHF','SLW','TNH','VNM'];
+		return ['ADM','CLCT','GLOP','FUN','TUP','PM','MO','EXPD','TIC','MTW','PMT','PSEC','NLY','MFA','HTS','GAIN','BX','HCN','OHI','SNH','GSK','EGAS','COR-A','COR','DLR-E','DLR','GRMN'];
 	}
 });
 App.IndexRoute = Ember.Route.extend({
   model: function() {
-    return ['ADM','CLCT','GLOP','FUN','TUP','PM','MO','EXPD','TIC','NYMT','AFL','PSEC','NLY','MFA','HTS','GAIN','BX','HCN','OHI','SNH','GSK','EGAS','COR-A','COR','DLR-E','DLR','GRMN','APD','ARCP','AVA','BBL','BNS','BP','CLX','COP','CVX','DLR','EMR','GE','HRS','IBM','ITW','JNJ','KMI','KO','LO','MCD','MDT','MO','NSC','O','OGS','OHI','OKE','PEP','PG','PM','PSX','RDS.B','RTN','SBSI','SYY','T','TD','TGT','TIS','VOD','VZ','WFC','WMT','XOM','MSFT','INTC','STZ','CTO','FUBC','BP','RRC','KLAC','ENS','PM','CF','CPN','E','LLY','MDT','APC','BP','PM','VZ','MO','T','ABT','CRESY','CHK','CPN','FCX','KMI','PCL','SOHU','TNH','SCCO','AFG','WRB','TRV','CB','PRA','AFSI','NG','AMH','WTW','ETE','EMC','TRGP','Y','D','WMT','HSY','IO','GOV','O','LNG','CSCO','DVA','LPI','DG','HL','NEA','IIM','NUV','NUAN','SWKS','TNH','FYLD','L','COST','SYLD','CJES','PKW','MIL','AREX','CPE','ESV','NOV','SDRL','MA','APA','EXXI','SWIR'];
+    return ['AFL','APD','ARCP','AVA','BAX','BBL','BNS','BP','CLX','COP','CVX','DLR','EMR','GE','HRS','IBM','ITW','JNJ','KMI','KO','LO','MCD','MDT','MO','NSC','O','OGS','OHI','OKE','PEP','PG','PM','PSX','RDS.B','RTN','SBSI','SYY','T','TD','TGT','TIS','VOD','VZ','WFC','WMT','XOM','MSFT','INTC','STZ','CTO','FUBC','BP','RRC','KLAC','ENS','PM','CF','CPN','E','LLY','MDT','APC','BP','PM','VZ','MO','T','ABT','CRESY','CHK','CPN','FCX','KMI','PCL','SOHU','','TNH','SCCO','AFG','WRB','TRV','CB','PRA','AFSI','NG','AMH','WTW','ETE','EMC','TRGP','Y','D','WMT','HSY','IO','GOV','O','LNG','CSCO','DVA','LPI','DG','HL','NEA','IIM','NUV','NUAN','SWKS','TNH','FYLD','L','COST','SYLD','CJES','PKW','MIL','AREX','CPE','ESV','NOV','SDRL','MA','APA','EXXI','SWIR'];
   }
 });

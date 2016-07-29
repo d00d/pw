@@ -27,10 +27,20 @@
       <li>{{#link-to 'p7'}}Current Investements{{/link-to}}</li>
       <li>{{#link-to 'p8'}}Current Trades{{/link-to}}</li>
       </ul>
+      <a href="http://finviz.com/screener.ashx?v=340&s=ta_topgainers&o=-change" target="_blank"/>TopToday</a>
       </div>
+      <h6> Remember confidence level should = = position size!</h6>
    </div>
    
-       <ul>
+     <ul>
+    
+     <section id="top"></section>        
+     <a class="nav" href="http://finviz.com/screener.ashx?v=340&s=ta_topgainers&o=-change" target="_blank"/>FinViz Top Stocks Today </a>
+     <br>
+    {{#each item in model}}
+      <a class="link-to" href="#{{item}}">{{item}}, </a>
+    {{/each}}
+       
     {{#each item in model}}
       <li>
         <b>{{item}} : </b>
@@ -41,7 +51,9 @@
           <a href="http://seekingalpha.com/symbol/{{item}}" target="_blank"/>Analysis</a>  
         <b> : </b> 
           <a href="http://stockcharts.com/h-sc/ui?s={{item}}&p=D&b=5&g=0&id=p14252106366" target="_blank"/>Chart</a>  
-        <br>
+   <b> : </b> 
+         <a href="http://www.stockal.com/#/symbol/{{item}}" target="_blank"/>Social</a>  
+           <a href="https://twitter.com/search?q=%24{{item}}&src=ctag" target="_blank"/>Twitter</a>  
         <table><tr><td>
              <img src="http://stockcharts.com/c-sc/sc?s={{item}}&p=D&b=5&g=0&i=p64176622437&r=1457665058631"/>
           </td><td>
@@ -68,6 +80,7 @@
       <li>{{#link-to 'p7'}}Current Investements{{/link-to}}</li>
       <li>{{#link-to 'p8'}}Current Trades{{/link-to}}</li>
       </ul>
+       <a href="http://finviz.com/screener.ashx?v=340&s=ta_topgainers&o=-change" target="_blank"/>TopToday</a>
       </div>
    </div>
   </script>
@@ -88,9 +101,18 @@
       <li>{{#link-to 'p7'}}Current Investements{{/link-to}}</li>
       <li>{{#link-to 'p8'}}Current Trades{{/link-to}}</li>
       </ul>
+       <a href="http://finviz.com/screener.ashx?v=340&s=ta_topgainers&o=-change" target="_blank"/>TopToday</a>
       </div>
        <ul>
-    {{#each item in model}}
+      
+      <section id="top"></section>        
+      <a class="nav" href="http://finviz.com/screener.ashx?v=340&s=ta_topgainers&o=-change" target="_blank"/>FinViz Top Stocks Today </a>
+      <br>
+      {{#each item in model}}
+          <a class="link-to" href="#{{item}}">{{item}}, </a>
+      {{/each}}
+      
+      {{#each item in model}}
       <li>
         <b>{{item}} : </b>
           <a href="http://www.gurufocus.com//stock.php?symbol={{item}}" target="_blank"/> Fundamentals </a>
@@ -100,7 +122,9 @@
           <a href="http://seekingalpha.com/symbol/{{item}}" target="_blank"/>Analysis</a>  
         <b> : </b> 
           <a href="http://stockcharts.com/h-sc/ui?s={{item}}&p=D&b=5&g=0&id=p14252106366" target="_blank"/>Chart</a>  
-        <br>
+   <b> : </b> 
+         <a href="http://www.stockal.com/#/symbol/{{item}}" target="_blank"/>Social</a>  
+           <a href="https://twitter.com/search?q=%24{{item}}&src=ctag" target="_blank"/>Twitter</a>  
         <table><tr><td>
              <img src="http://stockcharts.com/c-sc/sc?s={{item}}&p=D&b=5&g=0&i=p64176622437&r=1457665058631"/>
           </td><td>
@@ -126,6 +150,7 @@
       <li>{{#link-to 'p7'}}Current Investements{{/link-to}}</li>
       <li>{{#link-to 'p8'}}Current Trades{{/link-to}}</li>
       </ul>
+       <a href="http://finviz.com/screener.ashx?v=340&s=ta_topgainers&o=-change" target="_blank"/>TopToday</a>
       </div>
    </div>
   </script>
@@ -146,20 +171,31 @@
       <li>{{#link-to 'p7'}}Current Investements{{/link-to}}</li>
       <li>{{#link-to 'p8'}}Current Trades{{/link-to}}</li>
       </ul>
+       <a href="http://finviz.com/screener.ashx?v=340&s=ta_topgainers&o=-change" target="_blank"/>TopToday</a>
       </div>
        <ul>
+    
+      <section id="top"></section>        
+      <a class="nav" href="http://finviz.com/screener.ashx?v=340&s=ta_topgainers&o=-change" target="_blank"/>FinViz Top Stocks Today </a>
+      <br>
+    {{#each item in model}}
+       <a class="link-to" href="#{{item}}">{{item}}, </a>
+    {{/each}}
+    
     {{#each item in model}}
       <li>
-        <b>{{item}} : </b>
-          <a href="http://www.gurufocus.com//stock.php?symbol={{item}}" target="_blank"/> Fundamentals </a>
-        <b> : </b>
-          <a href="http://finviz.com/quote.ashx?t={{item}}" target="_blank"/> FinViz </a>
-        <b> : </b> 
-          <a href="http://seekingalpha.com/symbol/{{item}}" target="_blank"/>Analysis</a>  
-        <b> : </b> 
-          <a href="http://stockcharts.com/h-sc/ui?s={{item}}&p=D&b=5&g=0&id=p14252106366" target="_blank"/>Chart</a>  
-        <br>
-        <table><tr><td>
+      <b>{{item}} : </b>
+        <a href="http://www.gurufocus.com//stock.php?symbol={{item}}" target="_blank"/> Fundamentals </a>
+      <b> : </b>
+        <a href="http://finviz.com/quote.ashx?t={{item}}" target="_blank"/> FinViz </a>
+      <b> : </b> 
+        <a href="http://seekingalpha.com/symbol/{{item}}" target="_blank"/>Analysis</a>  
+      <b> : </b> 
+        <a href="http://stockcharts.com/h-sc/ui?s={{item}}&p=D&b=5&g=0&id=p14252106366" target="_blank"/>Chart</a>  
+      <b> : </b> 
+        <a href="http://www.stockal.com/#/symbol/{{item}}" target="_blank"/>Social</a>  
+        <a href="https://twitter.com/search?q=%24{{item}}&src=ctag" target="_blank"/>Twitter</a>  
+      <table><tr><td>
              <img src="http://stockcharts.com/c-sc/sc?s={{item}}&p=D&b=5&g=0&i=p64176622437&r=1457665058631"/>
           </td><td>
               <img src="http://stockcharts.com/c-sc/sc?s={{item}}&p=W&b=5&g=0&i=t99261714081&r=1408323404116"/>
@@ -184,6 +220,7 @@
       <li>{{#link-to 'p7'}}Current Investements{{/link-to}}</li>
       <li>{{#link-to 'p8'}}Current Trades{{/link-to}}</li>
       </ul>
+       <a href="http://finviz.com/screener.ashx?v=340&s=ta_topgainers&o=-change" target="_blank"/>TopToday</a>
       </div>
    </div>
   </script>
@@ -204,8 +241,17 @@
       <li>{{#link-to 'p7'}}Current Investements{{/link-to}}</li>
       <li>{{#link-to 'p8'}}Current Trades{{/link-to}}</li>
       </ul>
+       <a href="http://finviz.com/screener.ashx?v=340&s=ta_topgainers&o=-change" target="_blank"/>TopToday</a>
       </div>
        <ul>
+    
+    <section id="top"></section>        
+    <a class="nav" href="http://finviz.com/screener.ashx?v=340&s=ta_topgainers&o=-change" target="_blank"/>FinViz Top Stocks Today </a>
+    <br>
+    {{#each item in model}}
+       <a class="link-to" href="#{{item}}">{{item}}, </a>
+    {{/each}}
+
     {{#each item in model}}
       <li>
         <b>{{item}} : </b>
@@ -216,7 +262,9 @@
           <a href="http://seekingalpha.com/symbol/{{item}}" target="_blank"/>Analysis</a>  
         <b> : </b> 
           <a href="http://stockcharts.com/h-sc/ui?s={{item}}&p=D&b=5&g=0&id=p14252106366" target="_blank"/>Chart</a>  
-        <br>
+   <b> : </b> 
+         <a href="http://www.stockal.com/#/symbol/{{item}}" target="_blank"/>Social</a>  
+           <a href="https://twitter.com/search?q=%24{{item}}&src=ctag" target="_blank"/>Twitter</a>  
         <table><tr><td>
              <img src="http://stockcharts.com/c-sc/sc?s={{item}}&p=D&b=5&g=0&i=p64176622437&r=1457665058631"/>
           </td><td>
@@ -242,6 +290,7 @@
       <li>{{#link-to 'p7'}}Current Investements{{/link-to}}</li>
       <li>{{#link-to 'p8'}}Current Trades{{/link-to}}</li>
       </ul>
+       <a href="http://finviz.com/screener.ashx?v=340&s=ta_topgainers&o=-change" target="_blank"/>TopToday</a>
       </div>
    </div>
   </script>
@@ -262,8 +311,17 @@
       <li>{{#link-to 'p7'}}Current Investements{{/link-to}}</li>
 <li>{{#link-to 'p8'}}Current Trades{{/link-to}}</li>
       </ul>
+       <a href="http://finviz.com/screener.ashx?v=340&s=ta_topgainers&o=-change" target="_blank"/>TopToday</a>
       </div>
        <ul>
+
+     <section id="top"></section>        
+     <a class="nav" href="http://finviz.com/screener.ashx?v=340&s=ta_topgainers&o=-change" target="_blank"/>FinViz Top Stocks Today </a>
+     <br>
+    {{#each item in model}}
+      <a class="link-to" href="#{{item}}">{{item}}, </a>
+    {{/each}}
+        
     {{#each item in model}}
       <li>
         <b>{{item}} : </b>
@@ -274,7 +332,9 @@
           <a href="http://seekingalpha.com/symbol/{{item}}" target="_blank"/>Analysis</a>  
         <b> : </b> 
           <a href="http://stockcharts.com/h-sc/ui?s={{item}}&p=D&b=5&g=0&id=p14252106366" target="_blank"/>Chart</a>  
-        <br>
+   <b> : </b> 
+         <a href="http://www.stockal.com/#/symbol/{{item}}" target="_blank"/>Social</a>  
+           <a href="https://twitter.com/search?q=%24{{item}}&src=ctag" target="_blank"/>Twitter</a>  
         <table><tr><td>
              <img src="http://stockcharts.com/c-sc/sc?s={{item}}&p=D&b=5&g=0&i=p64176622437&r=1457665058631"/>
           </td><td>
@@ -300,6 +360,7 @@
       <li>{{#link-to 'p7'}}Current Investements{{/link-to}}</li>
       <li>{{#link-to 'p8'}}Current Trades{{/link-to}}</li>
       </ul>
+       <a href="http://finviz.com/screener.ashx?v=340&s=ta_topgainers&o=-change" target="_blank"/>TopToday</a>
       </div>
    </div>
   </script>
@@ -320,8 +381,17 @@
       <li>{{#link-to 'p7'}}Current Investements{{/link-to}}</li>
       <li>{{#link-to 'p8'}}Current Trades{{/link-to}}</li>
       </ul>
+       <a href="http://finviz.com/screener.ashx?v=340&s=ta_topgainers&o=-change" target="_blank"/>TopToday</a>
       </div>
        <ul>
+
+     <section id="top"></section>        
+     <a class="nav" href="http://finviz.com/screener.ashx?v=340&s=ta_topgainers&o=-change" target="_blank"/>FinViz Top Stocks Today </a>
+     <br>
+    {{#each item in model}}
+      <a class="link-to" href="#{{item}}">{{item}}, </a>
+    {{/each}}
+
     {{#each item in model}}
       <li>
         <b>{{item}} : </b>
@@ -332,7 +402,9 @@
           <a href="http://seekingalpha.com/symbol/{{item}}" target="_blank"/>Analysis</a>  
         <b> : </b> 
           <a href="http://stockcharts.com/h-sc/ui?s={{item}}&p=D&b=5&g=0&id=p14252106366" target="_blank"/>Chart</a>  
-        <br>
+   <b> : </b> 
+         <a href="http://www.stockal.com/#/symbol/{{item}}" target="_blank"/>Social</a>  
+           <a href="https://twitter.com/search?q=%24{{item}}&src=ctag" target="_blank"/>Twitter</a>  
         <table><tr><td>
              <img src="http://stockcharts.com/c-sc/sc?s={{item}}&p=D&b=5&g=0&i=p64176622437&r=1457665058631"/>
           </td><td>
@@ -358,6 +430,7 @@
       <li>{{#link-to 'p7'}}Current Investements{{/link-to}}</li>
       <li>{{#link-to 'p8'}}Current Trades{{/link-to}}</li>
       </ul>
+       <a href="http://finviz.com/screener.ashx?v=340&s=ta_topgainers&o=-change" target="_blank"/>TopToday</a>
       </div>
    </div>
   </script>
@@ -378,8 +451,17 @@
       <li>{{#link-to 'p7'}}Current Investements{{/link-to}}</li>
       <li>{{#link-to 'p8'}}Current Trades{{/link-to}}</li>
       </ul>
+       <a href="http://finviz.com/screener.ashx?v=340&s=ta_topgainers&o=-change" target="_blank"/>TopToday</a>
       </div>
        <ul>
+    
+    <section id="top"></section>        
+    <a class="nav" href="http://finviz.com/screener.ashx?v=340&s=ta_topgainers&o=-change" target="_blank"/>FinViz Top Stocks Today </a>
+    <br>
+    {{#each item in model}}
+      <a class="link-to" href="#{{item}}">{{item}}, </a>
+    {{/each}}
+
     {{#each item in model}}
       <li>
         <b>{{item}} : </b>
@@ -390,7 +472,9 @@
           <a href="http://seekingalpha.com/symbol/{{item}}" target="_blank"/>Analysis</a>  
         <b> : </b> 
           <a href="http://stockcharts.com/h-sc/ui?s={{item}}&p=D&b=5&g=0&id=p14252106366" target="_blank"/>Chart</a>  
-        <br>
+   <b> : </b> 
+         <a href="http://www.stockal.com/#/symbol/{{item}}" target="_blank"/>Social</a>  
+           <a href="https://twitter.com/search?q=%24{{item}}&src=ctag" target="_blank"/>Twitter</a>  
         <table><tr><td>
              <img src="http://stockcharts.com/c-sc/sc?s={{item}}&p=D&b=5&g=0&i=p64176622437&r=1457665058631"/>
           </td><td>
@@ -416,6 +500,7 @@
       <li>{{#link-to 'p7'}}Current Investements{{/link-to}}</li>
       <li>{{#link-to 'p8'}}Current Trades{{/link-to}}</li>
       </ul>
+       <a href="http://finviz.com/screener.ashx?v=340&s=ta_topgainers&o=-change" target="_blank"/>TopToday</a>
       </div>
    </div>
   </script>
@@ -436,8 +521,17 @@
       <li>{{#link-to 'p7'}}Current Investements{{/link-to}}</li>
       <li>{{#link-to 'p8'}}Current Trades{{/link-to}}</li>
       </ul>
+       <a href="http://finviz.com/screener.ashx?v=340&s=ta_topgainers&o=-change" target="_blank"/>TopToday</a>
       </div>
        <ul>
+    
+    <section id="top"></section>        
+    <a class="nav" href="http://finviz.com/screener.ashx?v=340&s=ta_topgainers&o=-change" target="_blank"/>FinViz Top Stocks Today </a>
+    <br>
+    {{#each item in model}}
+      <a class="link-to" href="#{{item}}">{{item}}, </a>
+    {{/each}}
+
     {{#each item in model}}
       <li>
         <b>{{item}} : </b>
@@ -448,7 +542,9 @@
           <a href="http://seekingalpha.com/symbol/{{item}}" target="_blank"/>Analysis</a>  
         <b> : </b> 
           <a href="http://stockcharts.com/h-sc/ui?s={{item}}&p=D&b=5&g=0&id=p14252106366" target="_blank"/>Chart</a>  
-        <br>
+   <b> : </b> 
+         <a href="http://www.stockal.com/#/symbol/{{item}}" target="_blank"/>Social</a>  
+           <a href="https://twitter.com/search?q=%24{{item}}&src=ctag" target="_blank"/>Twitter</a>  
         <table><tr><td>
              <img src="http://stockcharts.com/c-sc/sc?s={{item}}&p=D&b=5&g=0&i=p64176622437&r=1457665058631"/>
           </td><td>
@@ -474,6 +570,7 @@
       <li>{{#link-to 'p7'}}Current Investements{{/link-to}}</li>
       <li>{{#link-to 'p8'}}Current Trades{{/link-to}}</li>
       </ul>
+       <a href="http://finviz.com/screener.ashx?v=340&s=ta_topgainers&o=-change" target="_blank"/>TopToday</a>
       </div>
    </div>
   </script>
@@ -493,8 +590,17 @@
       <li>{{#link-to 'p7'}}Current Investements{{/link-to}}</li>
       <li>{{#link-to 'p8'}}Current Trades{{/link-to}}</li>
       </ul>
+       <a href="http://finviz.com/screener.ashx?v=340&s=ta_topgainers&o=-change" target="_blank"/>TopToday</a>
       </div>
        <ul>
+    
+    <section id="top"></section>        
+    <a class="nav" href="http://finviz.com/screener.ashx?v=340&s=ta_topgainers&o=-change" target="_blank"/>FinViz Top Stocks Today </a>
+    <br>
+    {{#each item in model}}
+      <a class="link-to" href="#{{item}}">{{item}}, </a>
+    {{/each}}
+
     {{#each item in model}}
       <li>
         <b>{{item}} : </b>
@@ -505,7 +611,9 @@
           <a href="http://seekingalpha.com/symbol/{{item}}" target="_blank"/>Analysis</a>  
         <b> : </b> 
           <a href="http://stockcharts.com/h-sc/ui?s={{item}}&p=D&b=5&g=0&id=p14252106366" target="_blank"/>Chart</a>  
-        <br>
+   <b> : </b> 
+         <a href="http://www.stockal.com/#/symbol/{{item}}" target="_blank"/>Social</a>  
+           <a href="https://twitter.com/search?q=%24{{item}}&src=ctag" target="_blank"/>Twitter</a>  
         <table><tr><td>
              <img src="http://stockcharts.com/c-sc/sc?s={{item}}&p=D&b=5&g=0&i=p64176622437&r=1457665058631"/>
           </td><td>
@@ -531,10 +639,13 @@
       <li>{{#link-to 'p7'}}Current Investements{{/link-to}}</li>
       <li>{{#link-to 'p8'}}Current Trades{{/link-to}}</li>
       </ul>
+       <a href="http://finviz.com/screener.ashx?v=340&s=ta_topgainers&o=-change" target="_blank"/>TopToday</a>
       </div>
    </div>
   </script>
-  <script type="text/x-handlebars" id="p7">
+
+<script type="text/x-handlebars" id="p7">
+
 <div class="navbar">
   <div class="navbar-inner">
     <a class="brand" href="#">Watch</a>
@@ -551,10 +662,20 @@
       <li>{{#link-to 'p8'}}Current Trades{{/link-to}}</li>
       </ul>
       </div>
-       <ul>
+     <ul>
+
+  <section id="top"></section>        
+    <a class="nav" href="http://finviz.com/screener.ashx?v=340&s=ta_topgainers&o=-change" target="_blank"/>FinViz Top Stocks Today </a>
+    <br>
+    {{#each item in model}}
+       <a class="link-to" href="#{{item}}">{{item}}, </a>
+    {{/each}}
+
     {{#each item in model}}
       <li>
-        <b>{{item}} : </b>
+      <section id="{{item}}"> 
+        <b> {{item}} </b>
+      </section>
           <a href="http://www.gurufocus.com//stock.php?symbol={{item}}" target="_blank"/> Fundamentals </a>
         <b> : </b>
           <a href="http://finviz.com/quote.ashx?t={{item}}" target="_blank"/> FinViz </a>
@@ -562,6 +683,10 @@
           <a href="http://seekingalpha.com/symbol/{{item}}" target="_blank"/>Analysis</a> 
         <b> : </b> 
           <a href="http://stockcharts.com/h-sc/ui?s={{item}}&p=D&b=5&g=0&id=p14252106366" target="_blank"/>Chart</a>    
+             <b> : </b> 
+         <a href="https://twitter.com/search?q=%24{{item}}&src=ctag" target="_blank"/>Twitter</a>  
+            <b> ... </b> 
+        <a class="link-to" href="#top">[back to top]</a>
         <br><table><tr><td>
              <img src="http://stockcharts.com/c-sc/sc?s={{item}}&p=D&b=5&g=0&i=p64176622437&r=1457665058631"/>
           </td><td>
@@ -570,6 +695,7 @@
         <br>
       </li>
     {{/each}}
+
     </ul>
    {{outlet}}
 <div class="navbar">
@@ -587,6 +713,7 @@
       <li>{{#link-to 'p7'}}Current Investements{{/link-to}}</li>
       <li>{{#link-to 'p8'}}Current Trades{{/link-to}}</li>
       </ul>
+       <a href="http://finviz.com/screener.ashx?v=340&s=ta_topgainers&o=-change" target="_blank"/>TopToday</a>
       </div>
    </div>
   </script>
@@ -607,8 +734,18 @@
       <li>{{#link-to 'p7'}}Current Investements{{/link-to}}</li>
       <li>{{#link-to 'p8'}}Current Trades{{/link-to}}</li>
       </ul>
+       <a href="http://finviz.com/screener.ashx?v=340&s=ta_topgainers&o=-change" target="_blank"/>TopToday</a>
       </div>
        <ul>
+
+     <section id="top"></section>        
+     <a class="nav" href="http://finviz.com/screener.ashx?v=340&s=ta_topgainers&o=-change" target="_blank"/>FinViz Top Stocks Today </a>
+     <br>
+     
+     {{#each item in model}}
+       <a class="link-to" href="#{{item}}">{{item}}, </a>
+     {{/each}}
+
     {{#each item in model}}
       <li>
         <b>{{item}} : </b>
@@ -619,6 +756,9 @@
           <a href="http://seekingalpha.com/symbol/{{item}}" target="_blank"/>Analysis</a>  
         <b> : </b> 
           <a href="http://stockcharts.com/h-sc/ui?s={{item}}&p=D&b=5&g=0&id=p14252106366" target="_blank"/>Chart</a> 
+             <b> : </b> 
+         <a href="http://www.stockal.com/#/symbol/{{item}}" target="_blank"/>Social</a>  
+           <a href="https://twitter.com/search?q=%24{{item}}&src=ctag" target="_blank"/>Twitter</a>  
         <br><table><tr><td>
              <img src="http://stockcharts.com/c-sc/sc?s={{item}}&p=D&b=5&g=0&i=p64176622437&r=1457665058631"/>
           </td><td>
@@ -644,6 +784,7 @@
       <li>{{#link-to 'p7'}}Current Investements{{/link-to}}</li>
       <li>{{#link-to 'p8'}}Current Trades{{/link-to}}</li>
       </ul>
+       <a href="http://finviz.com/screener.ashx?v=340&s=ta_topgainers&o=-change" target="_blank"/>TopToday</a>
       </div>
    </div>
   </script>
