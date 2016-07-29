@@ -52,7 +52,7 @@ App.P2Route = Ember.Route.extend ({
 // --------- ******** LIKE NOW ************  
 App.P3Route = Ember.Route.extend ({
 	model: function() {
-		return ['ACIA','SWKS','MA','V','DVIGX','GILD','OIBR','ibb','NG','UNP','ABT','NAT','ADM','CLCT','SWKS','GLOP','TUP','KERX','PM','NLY','GSK','FMC','COR','DLR','GNW','CAT','DBD','AVP','ABC','AAPL','BX','TAP','CB','MRVL','BUD','COR','GLOP','ECA','GOLR','DOW','DBD','SCPZF','SLB','HD','JPM','CCI','FIZZ','PSA','GSK','SFDC','SBUX','ORCL','MSFT','MCD','NLY','VGR','JNJ','CALM','T','BA','PBH','NAT','GEO','RAI','AINV','ARCC','PM','MAIN','WMB','HCN','MO','GD','STZ','OAK','EWS','PICK','WY','FXI','QCOM','WPRT','SBIO','GDXJ','FEMS','OXY','GILD','THS','CVX','STLD','PFE','MRVL','CRAY'];
+		return ['ACIA','SWKS','MA','V','DVIGX','BF/B','GILD','RAI','IBB','NG','UNP','ABT','AZO','ADM','KERX','PM','NLY','GSK','FMC','COR','DLR','GNW','CAT','ININ','AVP','ABC','AAPL','BX','TAP','CB','MRVL','BUD','COR','GLOP','ECA','GOLR','DOW','DBD','SCPZF','SLB','HD','JPM','CCI','FIZZ','PSA','GSK','SFDC','SBUX','ORCL','MSFT','MCD','NLY','VGR','JNJ','CALM','T','BA','PBH','NAT','GEO','RAI','AINV','ARCC','PM','MAIN','WMB','HCN','MO','GD','STZ','OAK','EWS','PICK','WY','FXI','QCOM','WPRT','SBIO','GDXJ','FEMS','OXY','GILD','THS','CVX','STLD','PFE','MRVL','CRAY'];
 	}
 });
 // --------- ******** Resources Sector Picks ************
