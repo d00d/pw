@@ -5,8 +5,9 @@
   <title>Portfolio Walker</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
-<link href="https://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
-<link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+  <link href="https://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+  <link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+  <link rel="shortcut icon" href="css/favicon.ico" type="image/x-icon"/ >
 </head>
 <body>
    <script type="text/javascript" src="js/libs/tabletop.js"></script>  
@@ -27,7 +28,9 @@
       <li>{{#link-to 'p7'}}Current Investements{{/link-to}}</li>
       <li>{{#link-to 'p8'}}Current Trades{{/link-to}}</li>
       </ul>
-      <a href="http://finviz.com/screener.ashx?v=340&s=ta_topgainers&o=-change" target="_blank"/>TopToday</a>
+      <a href="http://finviz.com/screener.ashx?v=340&s=ta_topgainers&o=-change" target="_blank"/><span class="label label-warning">TopToday</span></a>
+<a href="http://finviz.com/screener.ashx?v=210&s=ta_newhigh&o=pe" target="_blank"/><span class="label label-warning">New Highs</span></a>
+<a href="http://finviz.com/screener.ashx?v=210&s=ta_p_multiplebottom" target="_blank"/><span class="label label-warning">Multiple Bottom</span></a>
       </div>
       <h6> Remember confidence level should = = position size!</h6>
    </div>
@@ -38,7 +41,7 @@
      <a class="nav" href="http://finviz.com/screener.ashx?v=340&s=ta_topgainers&o=-change" target="_blank"/>FinViz Top Stocks Today </a>
      <br>
     {{#each item in model}}
-      <a class="link-to" href="#{{item}}">{{item}}, </a>
+      <a class="link-to" href="#{{item}}"><span class="label label-warning">{{item}}</span></a>
     {{/each}}
        
     {{#each item in model}}
@@ -46,9 +49,8 @@
        <section id="{{item}}"> 
        <section id="{{item}}"> 
         <b>{{item}} : </b>
-          <a href="http://www.gurufocus.com//stock.php?symbol={{item}}" target="_blank"/> Fundamentals </a>
-        <b> : </b>
-          <a href="http://finviz.com/quote.ashx?t={{item}}" target="_blank"/> FinViz </a>
+          <a href="http://www.gurufocus.com//stock.php?symbol={{item}}" target="_blank"/> <span class="label label-default">Fundamentals</span> </a>
+          <a href="http://finviz.com/quote.ashx?t={{item}}" target="_blank"/> <span class="label label-default"><span class="label label-default">FinViz</span></span> </a>
         <b> : </b> 
           <a href="http://seekingalpha.com/symbol/{{item}}" target="_blank"/>Analysis</a>  
         <b> : </b> 
@@ -84,7 +86,9 @@
       <li>{{#link-to 'p7'}}Current Investements{{/link-to}}</li>
       <li>{{#link-to 'p8'}}Current Trades{{/link-to}}</li>
       </ul>
-       <a href="http://finviz.com/screener.ashx?v=340&s=ta_topgainers&o=-change" target="_blank"/>TopToday</a>
+       <a href="http://finviz.com/screener.ashx?v=340&s=ta_topgainers&o=-change" target="_blank"/><span class="label label-warning">TopToday</span></a>
+<a href="http://finviz.com/screener.ashx?v=210&s=ta_newhigh&o=pe" target="_blank"/><span class="label label-warning">New Highs</span></a>
+<a href="http://finviz.com/screener.ashx?v=210&s=ta_p_multiplebottom" target="_blank"/><span class="label label-warning">Multiple Bottom</span></a>
       </div>
    </div>
   </script>
@@ -95,7 +99,7 @@
     <a class="brand" href="#">Watch</a>
     <ul class="nav">
       <li>{{#link-to 'rrd'}}Priors{{/link-to}}</li>
-      <li>{{#link-to 'sa'}}Grip{{/link-to}}</li>
+      <li class="active">{{#link-to 'sa'}}Grip{{/link-to}}</li>
       <li>{{#link-to 'p1'}}SIA{{/link-to}}</li>
       <li>{{#link-to 'p2'}}AREA 57{{/link-to}}</li>
       <li>{{#link-to 'p3'}}On-Deck{{/link-to}}</li>
@@ -105,7 +109,9 @@
       <li>{{#link-to 'p7'}}Current Investements{{/link-to}}</li>
       <li>{{#link-to 'p8'}}Current Trades{{/link-to}}</li>
       </ul>
-       <a href="http://finviz.com/screener.ashx?v=340&s=ta_topgainers&o=-change" target="_blank"/>TopToday</a>
+       <a href="http://finviz.com/screener.ashx?v=340&s=ta_topgainers&o=-change" target="_blank"/><span class="label label-warning">TopToday</span></a>
+<a href="http://finviz.com/screener.ashx?v=210&s=ta_newhigh&o=pe" target="_blank"/><span class="label label-warning">New Highs</span></a>
+<a href="http://finviz.com/screener.ashx?v=210&s=ta_p_multiplebottom" target="_blank"/><span class="label label-warning">Multiple Bottom</span></a>
       </div>
        <ul>
       
@@ -113,7 +119,7 @@
       <a class="nav" href="http://finviz.com/screener.ashx?v=340&s=ta_topgainers&o=-change" target="_blank"/>FinViz Top Stocks Today </a>
       <br>
       {{#each item in model}}
-          <a class="link-to" href="#{{item}}">{{item}}, </a>
+          <a class="link-to" href="#{{item}}"><span class="label label-warning">{{item}}</span></a>
       {{/each}}
       
       {{#each item in model}}
@@ -121,9 +127,8 @@
        <section id="{{item}}"> 
        <section id="{{item}}"> 
         <b>{{item}} : </b>
-          <a href="http://www.gurufocus.com//stock.php?symbol={{item}}" target="_blank"/> Fundamentals </a>
-        <b> : </b>
-          <a href="http://finviz.com/quote.ashx?t={{item}}" target="_blank"/> FinViz </a>
+          <a href="http://www.gurufocus.com//stock.php?symbol={{item}}" target="_blank"/> <span class="label label-default">Fundamentals</span> </a>
+          <a href="http://finviz.com/quote.ashx?t={{item}}" target="_blank"/> <span class="label label-default"><span class="label label-default">FinViz</span></a>
         <b> : </b> 
           <a href="http://seekingalpha.com/symbol/{{item}}" target="_blank"/>Analysis</a>  
         <b> : </b> 
@@ -148,7 +153,7 @@
     <a class="brand" href="#">Watch</a>
     <ul class="nav">
       <li>{{#link-to 'rrd'}}Priors{{/link-to}}</li>
-      <li>{{#link-to 'sa'}}Grip{{/link-to}}</li>
+      <li class="active">{{#link-to 'sa'}}Grip{{/link-to}}</li>
       <li>{{#link-to 'p1'}}SIA{{/link-to}}</li>
       <li>{{#link-to 'p2'}}AREA 57{{/link-to}}</li>
       <li>{{#link-to 'p3'}}On-Deck{{/link-to}}</li>
@@ -158,7 +163,9 @@
       <li>{{#link-to 'p7'}}Current Investements{{/link-to}}</li>
       <li>{{#link-to 'p8'}}Current Trades{{/link-to}}</li>
       </ul>
-       <a href="http://finviz.com/screener.ashx?v=340&s=ta_topgainers&o=-change" target="_blank"/>TopToday</a>
+       <a href="http://finviz.com/screener.ashx?v=340&s=ta_topgainers&o=-change" target="_blank"/><span class="label label-warning">TopToday</span></a>
+<a href="http://finviz.com/screener.ashx?v=210&s=ta_newhigh&o=pe" target="_blank"/><span class="label label-warning">New Highs</span></a>
+<a href="http://finviz.com/screener.ashx?v=210&s=ta_p_multiplebottom" target="_blank"/><span class="label label-warning">Multiple Bottom</span></a>
       </div>
    </div>
   </script>
@@ -170,7 +177,7 @@
     <ul class="nav">
       <li>{{#link-to 'rrd'}}Priors{{/link-to}}</li>
       <li>{{#link-to 'sa'}}Grip{{/link-to}}</li>
-      <li>{{#link-to 'p1'}}SIA{{/link-to}}</li>
+      <li class="active">{{#link-to 'p1'}}SIA{{/link-to}}</li>
       <li>{{#link-to 'p2'}}AREA 57{{/link-to}}</li>
       <li>{{#link-to 'p3'}}On-Deck{{/link-to}}</li>
       <li>{{#link-to 'p4'}}Resource{{/link-to}}</li>
@@ -179,7 +186,9 @@
       <li>{{#link-to 'p7'}}Current Investements{{/link-to}}</li>
       <li>{{#link-to 'p8'}}Current Trades{{/link-to}}</li>
       </ul>
-       <a href="http://finviz.com/screener.ashx?v=340&s=ta_topgainers&o=-change" target="_blank"/>TopToday</a>
+       <a href="http://finviz.com/screener.ashx?v=340&s=ta_topgainers&o=-change" target="_blank"/><span class="label label-warning">TopToday</span></a>
+<a href="http://finviz.com/screener.ashx?v=210&s=ta_newhigh&o=pe" target="_blank"/><span class="label label-warning">New Highs</span></a>
+<a href="http://finviz.com/screener.ashx?v=210&s=ta_p_multiplebottom" target="_blank"/><span class="label label-warning">Multiple Bottom</span></a>
       </div>
        <ul>
     
@@ -187,16 +196,15 @@
       <a class="nav" href="http://finviz.com/screener.ashx?v=340&s=ta_topgainers&o=-change" target="_blank"/>FinViz Top Stocks Today </a>
       <br>
     {{#each item in model}}
-       <a class="link-to" href="#{{item}}">{{item}}, </a>
+       <a class="link-to" href="#{{item}}"><span class="label label-warning">{{item}}</span></a>
     {{/each}}
     
     {{#each item in model}}
       <li>
        <section id="{{item}}"> 
       <b>{{item}} : </b>
-        <a href="http://www.gurufocus.com//stock.php?symbol={{item}}" target="_blank"/> Fundamentals </a>
-      <b> : </b>
-        <a href="http://finviz.com/quote.ashx?t={{item}}" target="_blank"/> FinViz </a>
+        <a href="http://www.gurufocus.com//stock.php?symbol={{item}}" target="_blank"/> <span class="label label-default">Fundamentals</span> </a>
+        <a href="http://finviz.com/quote.ashx?t={{item}}" target="_blank"/> <span class="label label-default">FinViz</span> </a>
       <b> : </b> 
         <a href="http://seekingalpha.com/symbol/{{item}}" target="_blank"/>Analysis</a>  
       <b> : </b> 
@@ -222,7 +230,7 @@
     <ul class="nav">
       <li>{{#link-to 'rrd'}}Priors{{/link-to}}</li>
       <li>{{#link-to 'sa'}}Grip{{/link-to}}</li>
-      <li>{{#link-to 'p1'}}SIA{{/link-to}}</li>
+      <li class="active">{{#link-to 'p1'}}SIA{{/link-to}}</li>
       <li>{{#link-to 'p2'}}AREA 57{{/link-to}}</li>
       <li>{{#link-to 'p3'}}On-Deck{{/link-to}}</li>
       <li>{{#link-to 'p4'}}Resource{{/link-to}}</li>
@@ -231,7 +239,9 @@
       <li>{{#link-to 'p7'}}Current Investements{{/link-to}}</li>
       <li>{{#link-to 'p8'}}Current Trades{{/link-to}}</li>
       </ul>
-       <a href="http://finviz.com/screener.ashx?v=340&s=ta_topgainers&o=-change" target="_blank"/>TopToday</a>
+       <a href="http://finviz.com/screener.ashx?v=340&s=ta_topgainers&o=-change" target="_blank"/><span class="label label-warning">TopToday</span></a>
+<a href="http://finviz.com/screener.ashx?v=210&s=ta_newhigh&o=pe" target="_blank"/><span class="label label-warning">New Highs</span></a>
+<a href="http://finviz.com/screener.ashx?v=210&s=ta_p_multiplebottom" target="_blank"/><span class="label label-warning">Multiple Bottom</span></a>
       </div>
    </div>
   </script>
@@ -241,7 +251,7 @@
   <div class="navbar-inner">
     <a class="brand" href="#">Watch</a>
     <ul class="nav">
-      <li>{{#link-to 'rrd'}}Priors{{/link-to}}</li>
+      <li class="active">{{#link-to 'rrd'}}Priors{{/link-to}}</li>
       <li>{{#link-to 'sa'}}Grip{{/link-to}}</li>
       <li>{{#link-to 'p1'}}SIA{{/link-to}}</li>
       <li>{{#link-to 'p2'}}AREA 57{{/link-to}}</li>
@@ -252,7 +262,9 @@
       <li>{{#link-to 'p7'}}Current Investements{{/link-to}}</li>
       <li>{{#link-to 'p8'}}Current Trades{{/link-to}}</li>
       </ul>
-       <a href="http://finviz.com/screener.ashx?v=340&s=ta_topgainers&o=-change" target="_blank"/>TopToday</a>
+       <a href="http://finviz.com/screener.ashx?v=340&s=ta_topgainers&o=-change" target="_blank"/><span class="label label-warning">TopToday</span></a>
+<a href="http://finviz.com/screener.ashx?v=210&s=ta_newhigh&o=pe" target="_blank"/><span class="label label-warning">New Highs</span></a>
+<a href="http://finviz.com/screener.ashx?v=210&s=ta_p_multiplebottom" target="_blank"/><span class="label label-warning">Multiple Bottom</span></a>
       </div>
        <ul>
     
@@ -260,16 +272,15 @@
     <a class="nav" href="http://finviz.com/screener.ashx?v=340&s=ta_topgainers&o=-change" target="_blank"/>FinViz Top Stocks Today </a>
     <br>
     {{#each item in model}}
-       <a class="link-to" href="#{{item}}">{{item}}, </a>
+       <a class="link-to" href="#{{item}}"><span class="label label-warning">{{item}}</span></a>
     {{/each}}
 
     {{#each item in model}}
       <li>
        <section id="{{item}}"> 
         <b>{{item}} : </b>
-          <a href="http://www.gurufocus.com//stock.php?symbol={{item}}" target="_blank"/> Fundamentals </a>
-        <b> : </b>
-          <a href="http://finviz.com/quote.ashx?t={{item}}" target="_blank"/> FinViz </a>
+          <a href="http://www.gurufocus.com//stock.php?symbol={{item}}" target="_blank"/> <span class="label label-default">Fundamentals</span> </a>
+          <a href="http://finviz.com/quote.ashx?t={{item}}" target="_blank"/> <span class="label label-default">FinViz</span></a>
         <b> : </b> 
           <a href="http://seekingalpha.com/symbol/{{item}}" target="_blank"/>Analysis</a>  
         <b> : </b> 
@@ -293,7 +304,7 @@
   <div class="navbar-inner">
     <a class="brand" href="#">Watch</a>
     <ul class="nav">
-      <li>{{#link-to 'rrd'}}Priors{{/link-to}}</li>
+      <li class="active">{{#link-to 'rrd'}}Priors{{/link-to}}</li>
       <li>{{#link-to 'sa'}}Grip{{/link-to}}</li>
       <li>{{#link-to 'p1'}}SIA{{/link-to}}</li>
       <li>{{#link-to 'p2'}}AREA 57{{/link-to}}</li>
@@ -304,7 +315,9 @@
       <li>{{#link-to 'p7'}}Current Investements{{/link-to}}</li>
       <li>{{#link-to 'p8'}}Current Trades{{/link-to}}</li>
       </ul>
-       <a href="http://finviz.com/screener.ashx?v=340&s=ta_topgainers&o=-change" target="_blank"/>TopToday</a>
+       <a href="http://finviz.com/screener.ashx?v=340&s=ta_topgainers&o=-change" target="_blank"/><span class="label label-warning">TopToday</span></a>
+<a href="http://finviz.com/screener.ashx?v=210&s=ta_newhigh&o=pe" target="_blank"/><span class="label label-warning">New Highs</span></a>
+<a href="http://finviz.com/screener.ashx?v=210&s=ta_p_multiplebottom" target="_blank"/><span class="label label-warning">Multiple Bottom</span></a>
       </div>
    </div>
   </script>
@@ -319,13 +332,15 @@
       <li>{{#link-to 'p1'}}SIA{{/link-to}}</li>
       <li>{{#link-to 'p2'}}AREA 57{{/link-to}}</li>
       <li>{{#link-to 'p3'}}On-Deck{{/link-to}}</li>
-      <li>{{#link-to 'p4'}}Resource{{/link-to}}</li>
+      <li class="active">{{#link-to 'p4'}}Resource{{/link-to}}</li>
       <li>{{#link-to 'p5'}}Hedges & Indicators {{/link-to}}</li> 
       <li>{{#link-to 'p6'}}Dogs Dow {{/link-to}}</li>
       <li>{{#link-to 'p7'}}Current Investements{{/link-to}}</li>
 <li>{{#link-to 'p8'}}Current Trades{{/link-to}}</li>
       </ul>
-       <a href="http://finviz.com/screener.ashx?v=340&s=ta_topgainers&o=-change" target="_blank"/>TopToday</a>
+       <a href="http://finviz.com/screener.ashx?v=340&s=ta_topgainers&o=-change" target="_blank"/><span class="label label-warning">TopToday</span></a>
+<a href="http://finviz.com/screener.ashx?v=210&s=ta_newhigh&o=pe" target="_blank"/><span class="label label-warning">New Highs</span></a>
+<a href="http://finviz.com/screener.ashx?v=210&s=ta_p_multiplebottom" target="_blank"/><span class="label label-warning">Multiple Bottom</span></a>
       </div>
        <ul>
 
@@ -333,16 +348,15 @@
      <a class="nav" href="http://finviz.com/screener.ashx?v=340&s=ta_topgainers&o=-change" target="_blank"/>FinViz Top Stocks Today </a>
      <br>
     {{#each item in model}}
-      <a class="link-to" href="#{{item}}">{{item}}, </a>
+      <a class="link-to" href="#{{item}}"><span class="label label-warning">{{item}}</span></a>
     {{/each}}
         
     {{#each item in model}}
       <li>
        <section id="{{item}}"> 
         <b>{{item}} : </b>
-          <a href="http://www.gurufocus.com//stock.php?symbol={{item}}" target="_blank"/> Fundamentals </a>
-        <b> : </b>
-          <a href="http://finviz.com/quote.ashx?t={{item}}" target="_blank"/> FinViz </a>
+          <a href="http://www.gurufocus.com//stock.php?symbol={{item}}" target="_blank"/> <span class="label label-default">Fundamentals</span><span class="label label-default">Fundamentals</span> </a>
+          <a href="http://finviz.com/quote.ashx?t={{item}}" target="_blank"/> <span class="label label-default">FinViz</span> </a>
         <b> : </b> 
           <a href="http://seekingalpha.com/symbol/{{item}}" target="_blank"/>Analysis</a>  
         <b> : </b> 
@@ -371,13 +385,15 @@
       <li>{{#link-to 'p1'}}SIA{{/link-to}}</li>
       <li>{{#link-to 'p2'}}AREA 57{{/link-to}}</li>
       <li>{{#link-to 'p3'}}On-Deck{{/link-to}}</li>
-      <li>{{#link-to 'p4'}}Resource{{/link-to}}</li>
+      <li class="active">{{#link-to 'p4'}}Resource{{/link-to}}</li>
       <li>{{#link-to 'p5'}}Hedges & Indicators {{/link-to}}</li> 
       <li>{{#link-to 'p6'}}Dogs Dow {{/link-to}}</li>
       <li>{{#link-to 'p7'}}Current Investements{{/link-to}}</li>
       <li>{{#link-to 'p8'}}Current Trades{{/link-to}}</li>
       </ul>
-       <a href="http://finviz.com/screener.ashx?v=340&s=ta_topgainers&o=-change" target="_blank"/>TopToday</a>
+       <a href="http://finviz.com/screener.ashx?v=340&s=ta_topgainers&o=-change" target="_blank"/><span class="label label-warning">TopToday</span></a>
+<a href="http://finviz.com/screener.ashx?v=210&s=ta_newhigh&o=pe" target="_blank"/><span class="label label-warning">New Highs</span></a>
+<a href="http://finviz.com/screener.ashx?v=210&s=ta_p_multiplebottom" target="_blank"/><span class="label label-warning">Multiple Bottom</span></a>
       </div>
    </div>
   </script>
@@ -391,14 +407,16 @@
       <li>{{#link-to 'sa'}}Grip{{/link-to}}</li>
       <li>{{#link-to 'p1'}}SIA{{/link-to}}</li>
       <li>{{#link-to 'p2'}}AREA 57{{/link-to}}</li>
-      <li>{{#link-to 'p3'}}On-Deck{{/link-to}}</li>
+      <li class="active">{{#link-to 'p3'}}On-Deck{{/link-to}}</li>
       <li>{{#link-to 'p4'}}Resource{{/link-to}}</li>
       <li>{{#link-to 'p5'}}Hedges & Indicators {{/link-to}}</li>
       <li>{{#link-to 'p6'}}Dogs Dow {{/link-to}}</li>
       <li>{{#link-to 'p7'}}Current Investements{{/link-to}}</li>
       <li>{{#link-to 'p8'}}Current Trades{{/link-to}}</li>
       </ul>
-       <a href="http://finviz.com/screener.ashx?v=340&s=ta_topgainers&o=-change" target="_blank"/>TopToday</a>
+       <a href="http://finviz.com/screener.ashx?v=340&s=ta_topgainers&o=-change" target="_blank"/><span class="label label-warning">TopToday</span></a>
+<a href="http://finviz.com/screener.ashx?v=210&s=ta_newhigh&o=pe" target="_blank"/><span class="label label-warning">New Highs</span></a>
+<a href="http://finviz.com/screener.ashx?v=210&s=ta_p_multiplebottom" target="_blank"/><span class="label label-warning">Multiple Bottom</span></a>
       </div>
        <ul>
 
@@ -406,16 +424,15 @@
      <a class="nav" href="http://finviz.com/screener.ashx?v=340&s=ta_topgainers&o=-change" target="_blank"/>FinViz Top Stocks Today </a>
      <br>
     {{#each item in model}}
-      <a class="link-to" href="#{{item}}">{{item}}, </a>
+      <a class="link-to" href="#{{item}}"><span class="label label-warning">{{item}}</span></a>
     {{/each}}
 
     {{#each item in model}}
       <li>
        <section id="{{item}}"> 
         <b>{{item}} : </b>
-          <a href="http://www.gurufocus.com//stock.php?symbol={{item}}" target="_blank"/> Fundamentals </a>
-        <b> : </b>
-          <a href="http://finviz.com/quote.ashx?t={{item}}" target="_blank"/> FinViz </a>
+          <a href="http://www.gurufocus.com//stock.php?symbol={{item}}" target="_blank"/> <span class="label label-default">Fundamentals</span> </a>
+          <a href="http://finviz.com/quote.ashx?t={{item}}" target="_blank"/> <span class="label label-default">FinViz</span></a>
         <b> : </b> 
           <a href="http://seekingalpha.com/symbol/{{item}}" target="_blank"/>Analysis</a>  
         <b> : </b> 
@@ -443,14 +460,16 @@
       <li>{{#link-to 'sa'}}Grip{{/link-to}}</li>
       <li>{{#link-to 'p1'}}SIA{{/link-to}}</li>
       <li>{{#link-to 'p2'}}AREA 57{{/link-to}}</li>
-      <li>{{#link-to 'p3'}}On-Deck{{/link-to}}</li>
+      <li class="active">{{#link-to 'p3'}}On-Deck{{/link-to}}</li>
       <li>{{#link-to 'p4'}}Resource{{/link-to}}</li>
       <li>{{#link-to 'p5'}}Hedges & Indicators {{/link-to}}</li>
       <li>{{#link-to 'p6'}}Dogs Dow {{/link-to}}</li>
       <li>{{#link-to 'p7'}}Current Investements{{/link-to}}</li>
       <li>{{#link-to 'p8'}}Current Trades{{/link-to}}</li>
       </ul>
-       <a href="http://finviz.com/screener.ashx?v=340&s=ta_topgainers&o=-change" target="_blank"/>TopToday</a>
+       <a href="http://finviz.com/screener.ashx?v=340&s=ta_topgainers&o=-change" target="_blank"/><span class="label label-warning">TopToday</span></a>
+<a href="http://finviz.com/screener.ashx?v=210&s=ta_newhigh&o=pe" target="_blank"/><span class="label label-warning">New Highs</span></a>
+<a href="http://finviz.com/screener.ashx?v=210&s=ta_p_multiplebottom" target="_blank"/><span class="label label-warning">Multiple Bottom</span></a>
       </div>
    </div>
   </script>
@@ -466,12 +485,14 @@
       <li>{{#link-to 'p2'}}AREA 57{{/link-to}}</li>
       <li>{{#link-to 'p3'}}On-Deck{{/link-to}}</li>
       <li>{{#link-to 'p4'}}Resource{{/link-to}}</li>
-      <li>{{#link-to 'p5'}}Hedges & Indicators {{/link-to}}</li>
+      <li class="active">{{#link-to 'p5'}}Hedges & Indicators {{/link-to}}</li>
       <li>{{#link-to 'p6'}}Dogs Dow {{/link-to}}</li>
       <li>{{#link-to 'p7'}}Current Investements{{/link-to}}</li>
       <li>{{#link-to 'p8'}}Current Trades{{/link-to}}</li>
       </ul>
-       <a href="http://finviz.com/screener.ashx?v=340&s=ta_topgainers&o=-change" target="_blank"/>TopToday</a>
+       <a href="http://finviz.com/screener.ashx?v=340&s=ta_topgainers&o=-change" target="_blank"/><span class="label label-warning">TopToday</span></a>
+<a href="http://finviz.com/screener.ashx?v=210&s=ta_newhigh&o=pe" target="_blank"/><span class="label label-warning">New Highs</span></a>
+<a href="http://finviz.com/screener.ashx?v=210&s=ta_p_multiplebottom" target="_blank"/><span class="label label-warning">Multiple Bottom</span></a>
       </div>
        <ul>
     
@@ -479,16 +500,15 @@
     <a class="nav" href="http://finviz.com/screener.ashx?v=340&s=ta_topgainers&o=-change" target="_blank"/>FinViz Top Stocks Today </a>
     <br>
     {{#each item in model}}
-      <a class="link-to" href="#{{item}}">{{item}}, </a>
+      <a class="link-to" href="#{{item}}"><span class="label label-warning">{{item}}</span></a>
     {{/each}}
 
     {{#each item in model}}
       <li>
        <section id="{{item}}"> 
         <b>{{item}} : </b>
-          <a href="http://www.gurufocus.com//stock.php?symbol={{item}}" target="_blank"/> Fundamentals </a>
-        <b> : </b>
-          <a href="http://finviz.com/quote.ashx?t={{item}}" target="_blank"/> FinViz </a>
+          <a href="http://www.gurufocus.com//stock.php?symbol={{item}}" target="_blank"/> <span class="label label-default">Fundamentals</span> </a>
+          <a href="http://finviz.com/quote.ashx?t={{item}}" target="_blank"/> <span class="label label-default">FinViz</span></a>
         <b> : </b> 
           <a href="http://seekingalpha.com/symbol/{{item}}" target="_blank"/>Analysis</a>  
         <b> : </b> 
@@ -518,12 +538,14 @@
       <li>{{#link-to 'p2'}}AREA 57{{/link-to}}</li>
       <li>{{#link-to 'p3'}}On-Deck{{/link-to}}</li>
       <li>{{#link-to 'p4'}}Resource{{/link-to}}</li>
-      <li>{{#link-to 'p5'}}Hedges & Indicators {{/link-to}}</li> 
+      <li class="active">{{#link-to 'p5'}}Hedges & Indicators {{/link-to}}</li> 
       <li>{{#link-to 'p6'}}Dogs Dow {{/link-to}}</li>
       <li>{{#link-to 'p7'}}Current Investements{{/link-to}}</li>
       <li>{{#link-to 'p8'}}Current Trades{{/link-to}}</li>
       </ul>
-       <a href="http://finviz.com/screener.ashx?v=340&s=ta_topgainers&o=-change" target="_blank"/>TopToday</a>
+       <a href="http://finviz.com/screener.ashx?v=340&s=ta_topgainers&o=-change" target="_blank"/><span class="label label-warning">TopToday</span></a>
+<a href="http://finviz.com/screener.ashx?v=210&s=ta_newhigh&o=pe" target="_blank"/><span class="label label-warning">New Highs</span></a>
+<a href="http://finviz.com/screener.ashx?v=210&s=ta_p_multiplebottom" target="_blank"/><span class="label label-warning">Multiple Bottom</span></a>
       </div>
    </div>
   </script>
@@ -536,7 +558,7 @@
       <li>{{#link-to 'rrd'}}Priors{{/link-to}}</li>
       <li>{{#link-to 'sa'}}Grip{{/link-to}}</li>
       <li>{{#link-to 'p1'}}SIA{{/link-to}}</li>
-      <li>{{#link-to 'p2'}}AREA 57{{/link-to}}</li>
+      <li class="active">{{#link-to 'p2'}}AREA 57{{/link-to}}</li>
       <li>{{#link-to 'p3'}}On-Deck{{/link-to}}</li>
       <li>{{#link-to 'p4'}}Resource{{/link-to}}</li>
       <li>{{#link-to 'p5'}}Hedges & Indicators {{/link-to}}</li>
@@ -544,7 +566,9 @@
       <li>{{#link-to 'p7'}}Current Investements{{/link-to}}</li>
       <li>{{#link-to 'p8'}}Current Trades{{/link-to}}</li>
       </ul>
-       <a href="http://finviz.com/screener.ashx?v=340&s=ta_topgainers&o=-change" target="_blank"/>TopToday</a>
+       <a href="http://finviz.com/screener.ashx?v=340&s=ta_topgainers&o=-change" target="_blank"/><span class="label label-warning">TopToday</span></a>
+<a href="http://finviz.com/screener.ashx?v=210&s=ta_newhigh&o=pe" target="_blank"/><span class="label label-warning">New Highs</span></a>
+<a href="http://finviz.com/screener.ashx?v=210&s=ta_p_multiplebottom" target="_blank"/><span class="label label-warning">Multiple Bottom</span></a>
       </div>
        <ul>
     
@@ -552,16 +576,15 @@
     <a class="nav" href="http://finviz.com/screener.ashx?v=340&s=ta_topgainers&o=-change" target="_blank"/>FinViz Top Stocks Today </a>
     <br>
     {{#each item in model}}
-      <a class="link-to" href="#{{item}}">{{item}}, </a>
+      <a class="link-to" href="#{{item}}"><span class="label label-warning">{{item}}</span></a>
     {{/each}}
 
     {{#each item in model}}
       <li>
        <section id="{{item}}"> 
         <b>{{item}} : </b>
-          <a href="http://www.gurufocus.com//stock.php?symbol={{item}}" target="_blank"/> Fundamentals </a>
-        <b> : </b>
-          <a href="http://finviz.com/quote.ashx?t={{item}}" target="_blank"/> FinViz </a>
+          <a href="http://www.gurufocus.com//stock.php?symbol={{item}}" target="_blank"/> <span class="label label-default">Fundamentals</span> </a>
+          <a href="http://finviz.com/quote.ashx?t={{item}}" target="_blank"/><span class="label label-default">FinViz</span></a>
         <b> : </b> 
           <a href="http://seekingalpha.com/symbol/{{item}}" target="_blank"/>Analysis</a>  
         <b> : </b> 
@@ -588,7 +611,7 @@
       <li>{{#link-to 'rrd'}}Priors{{/link-to}}</li>
       <li>{{#link-to 'sa'}}Grip{{/link-to}}</li>
       <li>{{#link-to 'p1'}}SIA{{/link-to}}</li>
-      <li>{{#link-to 'p2'}}AREA 57{{/link-to}}</li>
+      <li class="active">{{#link-to 'p2'}}AREA 57{{/link-to}}</li>
       <li>{{#link-to 'p3'}}On-Deck{{/link-to}}</li>
       <li>{{#link-to 'p4'}}Resource{{/link-to}}</li>
       <li>{{#link-to 'p5'}}Hedges & Indicators {{/link-to}}</li> 
@@ -596,7 +619,9 @@
       <li>{{#link-to 'p7'}}Current Investements{{/link-to}}</li>
       <li>{{#link-to 'p8'}}Current Trades{{/link-to}}</li>
       </ul>
-       <a href="http://finviz.com/screener.ashx?v=340&s=ta_topgainers&o=-change" target="_blank"/>TopToday</a>
+       <a href="http://finviz.com/screener.ashx?v=340&s=ta_topgainers&o=-change" target="_blank"/><span class="label label-warning">TopToday</span></a>
+<a href="http://finviz.com/screener.ashx?v=210&s=ta_newhigh&o=pe" target="_blank"/><span class="label label-warning">New Highs</span></a>
+<a href="http://finviz.com/screener.ashx?v=210&s=ta_p_multiplebottom" target="_blank"/><span class="label label-warning">Multiple Bottom</span></a>
       </div>
    </div>
   </script>
@@ -612,11 +637,13 @@
       <li>{{#link-to 'p3'}}On-Deck{{/link-to}}</li>
       <li>{{#link-to 'p4'}}Resource{{/link-to}}</li>
       <li>{{#link-to 'p5'}}Hedges & Indicators {{/link-to}}</li>
-      <li>{{#link-to 'p6'}}Dogs Dow {{/link-to}}</li>
+      <li class="active">{{#link-to 'p6'}}Dogs Dow {{/link-to}}</li>
       <li>{{#link-to 'p7'}}Current Investements{{/link-to}}</li>
       <li>{{#link-to 'p8'}}Current Trades{{/link-to}}</li>
       </ul>
-       <a href="http://finviz.com/screener.ashx?v=340&s=ta_topgainers&o=-change" target="_blank"/>TopToday</a>
+       <a href="http://finviz.com/screener.ashx?v=340&s=ta_topgainers&o=-change" target="_blank"/><span class="label label-warning">TopToday</span></a>
+<a href="http://finviz.com/screener.ashx?v=210&s=ta_newhigh&o=pe" target="_blank"/><span class="label label-warning">New Highs</span></a>
+<a href="http://finviz.com/screener.ashx?v=210&s=ta_p_multiplebottom" target="_blank"/><span class="label label-warning">Multiple Bottom</span></a>
       </div>
        <ul>
     
@@ -624,16 +651,15 @@
     <a class="nav" href="http://finviz.com/screener.ashx?v=340&s=ta_topgainers&o=-change" target="_blank"/>FinViz Top Stocks Today </a>
     <br>
     {{#each item in model}}
-      <a class="link-to" href="#{{item}}">{{item}}, </a>
+<a class="link-to" href="#{{item}}"><span class="label label-warning">{{item}}</span></a>
     {{/each}}
 
     {{#each item in model}}
       <li>
        <section id="{{item}}"> 
         <b>{{item}} : </b>
-          <a href="http://www.gurufocus.com//stock.php?symbol={{item}}" target="_blank"/> Fundamentals </a>
-        <b> : </b>
-          <a href="http://finviz.com/quote.ashx?t={{item}}" target="_blank"/> FinViz </a>
+          <a href="http://www.gurufocus.com//stock.php?symbol={{item}}" target="_blank"/> <span class="label label-default">Fundamentals</span></a>
+          <a href="http://finviz.com/quote.ashx?t={{item}}" target="_blank"/><span class="label label-default">FinViz</span></a>
         <b> : </b> 
           <a href="http://seekingalpha.com/symbol/{{item}}" target="_blank"/>Analysis</a>  
         <b> : </b> 
@@ -664,11 +690,13 @@
       <li>{{#link-to 'p3'}}On-Deck{{/link-to}}</li>
       <li>{{#link-to 'p4'}}Resource{{/link-to}}</li>
       <li>{{#link-to 'p5'}}Hedges & Indicators {{/link-to}}</li> 
-      <li>{{#link-to 'p6'}}Dogs Dow {{/link-to}}</li>
+      <li class="active">{{#link-to 'p6'}}Dogs Dow {{/link-to}}</li>
       <li>{{#link-to 'p7'}}Current Investements{{/link-to}}</li>
       <li>{{#link-to 'p8'}}Current Trades{{/link-to}}</li>
       </ul>
-       <a href="http://finviz.com/screener.ashx?v=340&s=ta_topgainers&o=-change" target="_blank"/>TopToday</a>
+       <a href="http://finviz.com/screener.ashx?v=340&s=ta_topgainers&o=-change" target="_blank"/><span class="label label-warning">TopToday</span></a>
+<a href="http://finviz.com/screener.ashx?v=210&s=ta_newhigh&o=pe" target="_blank"/><span class="label label-warning">New Highs</span></a>
+<a href="http://finviz.com/screener.ashx?v=210&s=ta_p_multiplebottom" target="_blank"/><span class="label label-warning">Multiple Bottom</span></a>
       </div>
    </div>
   </script>
@@ -687,9 +715,12 @@
       <li>{{#link-to 'p4'}}Resource{{/link-to}}</li>
       <li>{{#link-to 'p5'}}Hedges & Indicators {{/link-to}}</li>
       <li>{{#link-to 'p6'}}Dogs Dow {{/link-to}}</li>
-      <li>{{#link-to 'p7'}}Current Investements{{/link-to}}</li>
+      <li class="active">{{#link-to 'p7'}}Current Investements{{/link-to}}</li>
       <li>{{#link-to 'p8'}}Current Trades{{/link-to}}</li>
       </ul>
+          <a href="http://finviz.com/screener.ashx?v=340&s=ta_topgainers&o=-change" target="_blank"/><span class="label label-warning">TopToday</span></a>
+          <a href="http://finviz.com/screener.ashx?v=210&s=ta_newhigh&o=pe" target="_blank"/><span class="label label-warning">New Highs</span></a>
+<a href="http://finviz.com/screener.ashx?v=210&s=ta_p_multiplebottom" target="_blank"/><span class="label label-warning">Multiple Bottom</span></a>
       </div>
      <ul>
 
@@ -697,18 +728,16 @@
     <a class="nav" href="http://finviz.com/screener.ashx?v=340&s=ta_topgainers&o=-change" target="_blank"/>FinViz Top Stocks Today </a>
     <br>
     {{#each item in model}}
-       <a class="link-to" href="#{{item}}">{{item}}, </a>
+ <a class="link-to" href="#{{item}}"><span class="label label-warning">{{item}}</span></a>
     {{/each}}
 
     {{#each item in model}}
-      <li>
+      
        <section id="{{item}}"> 
-      <section id="{{item}}"> 
-        <b> {{item}} </b>
+        <span class="label label-success">{{item}}</span>
       </section>
-          <a href="http://www.gurufocus.com//stock.php?symbol={{item}}" target="_blank"/> Fundamentals </a>
-        <b> : </b>
-          <a href="http://finviz.com/quote.ashx?t={{item}}" target="_blank"/> FinViz </a>
+          <a href="http://www.gurufocus.com//stock.php?symbol={{item}}" target="_blank"/> <span class="label label-default">Fundamentals</span></a>
+          <a href="http://finviz.com/quote.ashx?t={{item}}" target="_blank"/><span class="label label-default">FinViz</span></a>
         <b> : </b> 
           <a href="http://seekingalpha.com/symbol/{{item}}" target="_blank"/>Analysis</a> 
         <b> : </b> 
@@ -716,9 +745,7 @@
              <b> : </b> 
          <a href="https://twitter.com/search?q=%24{{item}}&src=ctag" target="_blank"/>Twitter</a>  
           <b> ... </b> 
-        <a class="link-to" href="#top">[back to top]</a>
-            <b> ... </b> 
-        <a class="link-to" href="#top">[back to top]</a>
+        <a class="link-to" href="#top"><span class="label label-info">Back to Top</span></a>
         <br><table><tr><td>
              <img src="http://stockcharts.com/c-sc/sc?s={{item}}&p=D&b=5&g=0&i=p64176622437&r=1457665058631"/>
           </td><td>
@@ -742,10 +769,12 @@
       <li>{{#link-to 'p4'}}Resource{{/link-to}}</li>
       <li>{{#link-to 'p5'}}Hedges & Indicators {{/link-to}}</li> 
       <li>{{#link-to 'p6'}}Dogs Dow {{/link-to}}</li>
-      <li>{{#link-to 'p7'}}Current Investements{{/link-to}}</li>
+      <li class="active">{{#link-to 'p7'}}Current Investements{{/link-to}}</li>
       <li>{{#link-to 'p8'}}Current Trades{{/link-to}}</li>
       </ul>
-       <a href="http://finviz.com/screener.ashx?v=340&s=ta_topgainers&o=-change" target="_blank"/>TopToday</a>
+       <a href="http://finviz.com/screener.ashx?v=340&s=ta_topgainers&o=-change" target="_blank"/><span class="label label-warning">TopToday</span></a>
+       <a href="http://finviz.com/screener.ashx?v=210&s=ta_newhigh&o=pe" target="_blank"/><span class="label label-warning">New Highs</span></a>
+<a href="http://finviz.com/screener.ashx?v=210&s=ta_p_multiplebottom" target="_blank"/><span class="label label-warning">Multiple Bottom</span></a>
       </div>
    </div>
   </script>
@@ -764,9 +793,11 @@
       <li>{{#link-to 'p5'}}Hedges & Indicators {{/link-to}}</li> 
       <li>{{#link-to 'p6'}}Dogs Dow {{/link-to}}</li>
       <li>{{#link-to 'p7'}}Current Investements{{/link-to}}</li>
-      <li>{{#link-to 'p8'}}Current Trades{{/link-to}}</li>
+      <li class="active">{{#link-to 'p8'}}Current Trades{{/link-to}}</li>
       </ul>
-       <a href="http://finviz.com/screener.ashx?v=340&s=ta_topgainers&o=-change" target="_blank"/>TopToday</a>
+        <a href="http://finviz.com/screener.ashx?v=340&s=ta_topgainers&o=-change" target="_blank"/><span class="label label-warning">TopToday</span></a>
+        <a href="http://finviz.com/screener.ashx?v=210&s=ta_newhigh&o=pe" target="_blank"/><span class="label label-warning">New Highs</span></a>
+<a href="http://finviz.com/screener.ashx?v=210&s=ta_p_multiplebottom" target="_blank"/><span class="label label-warning">Multiple Bottom</span></a>
       </div>
        <ul>
 
@@ -775,17 +806,20 @@
      <br>
      
      {{#each item in model}}
-       <a class="link-to" href="#{{item}}">{{item}}, </a>
+       <a class="link-to" href="#{{item}}"><span class="label label-warning">{{item}}</span></a>
      {{/each}}
 
     {{#each item in model}}
-      <li>
+      
+      
+<div class="panel panel-success">
+     <div class="panel-heading">
+        <h4 class="panel-title">{{item}}</h4>
+      </div>
+      <div class="panel-body">
        <section id="{{item}}"> 
-       <section id="{{item}}"> 
-        <b>{{item}} : </b>
-          <a href="http://www.gurufocus.com/stock.php?symbol={{item}}" target="_blank"/> Fundamentals </a>
-        <b> : </b>
-          <a href="http://finviz.com/quote.ashx?t={{item}}" target="_blank"/> FinViz </a>
+          <a href="http://www.gurufocus.com/stock.php?symbol={{item}}" target="_blank"/><span class="label label-default">Fundamentals</span></a>
+          <a href="http://finviz.com/quote.ashx?t={{item}}" target="_blank"/> <span class="label label-default"><span class="label label-default">FinViz</span> </a>
         <b> : </b> 
           <a href="http://seekingalpha.com/symbol/{{item}}" target="_blank"/>Analysis</a>  
         <b> : </b> 
@@ -794,12 +828,15 @@
          <a href="http://www.stockal.com/#/symbol/{{item}}" target="_blank"/>Social</a>  
            <a href="https://twitter.com/search?q=%24{{item}}&src=ctag" target="_blank"/>Twitter</a>  
             <b> ... </b> 
-        <a class="link-to" href="#top">[back to top]</a>
-        <br><table><tr><td>
-             <img src="http://stockcharts.com/c-sc/sc?s={{item}}&p=D&b=5&g=0&i=p64176622437&r=1457665058631"/>
-          </td><td>
-              <img src="http://stockcharts.com/c-sc/sc?s={{item}}&p=W&b=5&g=0&i=t99261714081&r=1408323404116"/>
-          </td></tr></table>
+        <a class="link-to" href="#top"><span class="label label-info">Back to Top</span></a>
+        <br>
+
+                <img src="http://stockcharts.com/c-sc/sc?s={{item}}&p=D&b=5&g=0&i=p64176622437&r=1457665058631"/>
+          
+                <img src="http://stockcharts.com/c-sc/sc?s={{item}}&p=W&b=5&g=0&i=t99261714081&r=1408323404116"/>
+          
+          </div>
+</div>
         <br>
       </li>
     {{/each}}
@@ -818,9 +855,11 @@
       <li>{{#link-to 'p5'}}Hedges & Indicators {{/link-to}}</li>
       <li>{{#link-to 'p6'}}Dogs Dow {{/link-to}}</li>
       <li>{{#link-to 'p7'}}Current Investements{{/link-to}}</li>
-      <li>{{#link-to 'p8'}}Current Trades{{/link-to}}</li>
+      <li class="active">{{#link-to 'p8'}}Current Trades{{/link-to}}</li>
       </ul>
-       <a href="http://finviz.com/screener.ashx?v=340&s=ta_topgainers&o=-change" target="_blank"/>TopToday</a>
+       <a href="http://finviz.com/screener.ashx?v=340&s=ta_topgainers&o=-change" target="_blank"/><span class="label label-warning">TopToday</span></a>
+       <a href="http://finviz.com/screener.ashx?v=210&s=ta_newhigh&o=pe" target="_blank"/><span class="label label-warning">New Highs</span></a>
+<a href="http://finviz.com/screener.ashx?v=210&s=ta_p_multiplebottom" target="_blank"/><span class="label label-warning">Multiple Bottom</span></a>
       </div>
    </div>
   </script>
